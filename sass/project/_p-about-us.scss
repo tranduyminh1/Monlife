@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+.p-about-us {
+    font-family: 'Roboto', sans-serif;
+
+    &__inner {
+        max-width: 1260px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 15px;
+
+        h2 {
+            @include fs(44);
+            margin-top: 60px;
+            margin-bottom: 30px;
+            text-align: center;
+
+            @include br990 {
+                @include fs(32);
+                line-height: 1.6;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+
+            @include br500 {
+                @include fs(24);
+                line-height: 1.6;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+        }
+
+        h3 {
+            @include fs(24);
+            margin-top: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            line-height: 1.6;
+
+            @include br990 {
+                @include fs(20);
+                line-height: 1.6;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            @include br500 {
+                @include fs(18);
+                line-height: 1.6;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .note {
+            p {
+                @include fs(20);
+                line-height: 1.6;
+                margin-bottom: 20px;
+
+                @include br990 {
+                    @include fs(16);
+                    line-height: 1.6;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        h4 {
+            font-family: 'Pacifico', cursive;
+            @include fs(50);
+            text-align: center;
+            font-weight: normal;
+            color: #000;
+            margin-top: 60px;
+            margin-bottom: 60px;
+
+            @include br990 {
+                @include fs(38);
+                line-height: 1.6;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            @include br500 {
+                @include fs(24);
+                line-height: 1.6;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        h5 {
+            @include fs(40);
+            margin-top: 60px;
+            margin-bottom: 60px;
+            text-align: center;
+            font-weight: 800;
+
+            @include br990 {
+                @include fs(28);
+                line-height: 1.6;
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+
+            @include br739 {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            @include br500 {
+                @include fs(24);
+            }
+        }
+
+        .guide-right {
+            position: relative;
+
+            img {
+                width: 705px;
+
+                @include br990 {
+                    width: 450px;
+                }
+
+                @include br739 {
+                    width: 300px;
+                }
+            }
+
+            .text {
+                background: #5B712E;
+                width: 570px;
+                height: 570px;
+                border-radius: 15px;
+                padding: 60px;
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @include br990 {
+                    width: 450px;
+                    height: initial;
+                    border-radius: 10px;
+                }
+
+                @include br739 {
+                    width: 90%;
+                    position: relative;
+                    top: -30px;
+                    transform: initial;
+                    padding: 20px;
+                    right: -30px;
+                }
+
+                h4 {
+                    font-family: 'Nunito', sans-serif;
+                    @include fs(40);
+                    color: #fff;
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                    text-align: left;
+                    font-weight: 800;
+
+                    @include br990 {
+                        @include fs(24);
+                        line-height: 1.6;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                ul {
+                    li {
+                        @include fs(18);
+                        color: #fff;
+                        margin-bottom: 20px;
+                        line-height: 1.6;
+
+                        @include br990 {
+                            @include fs(16);
+                            line-height: 1.6;
+                            margin-bottom: 10px;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .guide-left {
+            position: relative;
+            text-align: right;
+            margin-bottom: 100px;
+
+            @include br739 {
+                margin-bottom: 40px;
+            }
+
+            img {
+                width: 705px;
+
+                @include br990 {
+                    width: 450px;
+                }
+
+                @include br739 {
+                    width: 300px;
+                }
+            }
+
+            .text {
+                background: #5B712E;
+                width: 570px;
+                height: 570px;
+                border-radius: 15px;
+                padding: 60px;
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @include br990 {
+                    width: 450px;
+                    height: initial;
+                }
+
+                @include br739 {
+                    width: 90%;
+                    position: relative;
+                    top: -30px;
+                    transform: initial;
+                    border-radius: 10px;
+                    padding: 20px;
+                }
+
+                h4 {
+                    font-family: 'Nunito', sans-serif;
+                    @include fs(40);
+                    color: #fff;
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                    text-align: left;
+                    font-weight: 800;
+
+                    @include br990 {
+                        @include fs(24);
+                        line-height: 1.6;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                ul {
+                    li {
+                        @include fs(18);
+                        color: #fff;
+                        margin-bottom: 20px;
+                        line-height: 1.6;
+                        text-align: left;
+
+                        @include br990 {
+                            @include fs(16);
+                            line-height: 1.6;
+                            margin-bottom: 10px;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

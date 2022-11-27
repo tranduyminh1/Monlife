@@ -1,0 +1,689 @@
+@charset "utf-8";
+
+.p-account-info {
+    &__inner {
+        max-width: 1260px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 15px;
+        font-family: 'Roboto', sans-serif;
+
+        .box {
+            margin-top: 60px;
+            margin-bottom: 60px;
+
+            &__nav {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: -5px;
+                    margin-right: -5px;
+
+                    li {
+                        padding-left: 5px;
+                        padding-right: 5px;
+
+                        a {
+                            @include fs(18);
+                            padding: 20px 25px 20px 25px;
+                            background-color: #D8D8D8;
+                            border-radius: 10px 10px 0px 0px;
+                            color: #fff;
+
+                            &:hover {
+                                background-color: #5B712E;
+                                color: #fff;
+                            }
+                        }
+
+                        .active {
+                            background-color: #5B712E;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                &__pc {
+                    @include br739 {
+                        display: none;
+                    }
+                }
+
+                &__mb {
+                    display: none;
+                    margin-bottom: 25px;
+
+                    @include br739 {
+                        display: block;
+                    }
+
+                    .c-nice-select {
+                        .nice-select {
+                            height: 50px;
+
+                            &:after {
+                                background-size: 100%;
+                                width: 20px;
+                                height: 20px;
+                            }
+
+                            .list {
+                                background-color: #F6EFE5;
+
+                                li {
+                                    color: #4A4A4A;
+                                    @include fs(16);
+                                }
+                            }
+                        }
+
+                        .current {
+                            font-family: 'Roboto', sans-serif;
+                            @include fs(16);
+                        }
+                    }
+
+                    .nice-select .option:hover,
+                    .nice-select .option.focus,
+                    .nice-select .option.selected.focus {
+                        background-color: #5B712E;
+                        color: #fff;
+                        font-weight: normal;
+                    }
+
+                    .nice-select.open:after {
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            &__block {
+                border: 1px solid #E9E7E7;
+                padding: 50px;
+
+                @include br990 {
+                    padding: 30px;
+                }
+
+                .avatar {
+                    margin-bottom: 30px;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+
+                        li {
+                            p {
+                                padding-left: 20px;
+
+                                @include br739 {
+                                    padding-left: 20px;
+                                }
+                            }
+                        }
+
+                        li:last-child {
+                            flex: 1;
+                        }
+                    }
+                }
+
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: -25px;
+                    margin-right: -25px;
+
+                    @include br739 {
+                        margin-left: -15px;
+                        margin-right: -15px;
+                    }
+
+                    .col {
+                        flex: 50%;
+                        width: 50%;
+                        padding-left: 25px;
+                        padding-right: 25px;
+
+                        @include br739 {
+                            flex: 100%;
+                            width: 100%;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+
+                        .btn-pc {
+                            @include br739 {
+                                display: none;
+                            }
+                        }
+
+                        .btn-mobile {
+                            display: none;
+
+                            @include br739 {
+                                display: block;
+                            }
+                        }
+
+                        .form {
+                            position: relative;
+                            margin-bottom: 25px;
+
+                            label {
+                                display: block;
+                                margin-bottom: 15px;
+                                @include fs(16);
+                            }
+
+                            .active {
+                                border: 1px solid #5B712E;
+                            }
+
+                            .toggle-password {
+                                position: absolute;
+                                right: 15px;
+                                bottom: 10px;
+                                cursor: pointer;
+                                line-height: 0px;
+
+                                img {
+                                    width: 32px;
+                                    height: 32px;
+
+                                    &:last-child {
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                            .toggle-password-open {
+                                img {
+
+                                    &:first-child {
+                                        display: none;
+                                    }
+
+                                    &:last-child {
+                                        display: inline-block;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .order-list {
+                    &__head {
+                        background-color: #F2F3F4;
+                        border-radius: 15px;
+                        padding: 15px 35px 15px 35px;
+                        margin-bottom: 30px;
+                        font-family: 'Roboto', sans-serif;
+
+                        @include br990 {
+                            display: none;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+
+                            li {
+                                @include fs(16);
+                                font-weight: 600;
+                            }
+
+                            li:nth-child(1) {
+                                width: 15%;
+                                flex: 15%;
+
+                            }
+
+                            li:nth-child(2) {
+                                width: 30%;
+                                flex: 30%;
+
+                                @include br990 {
+                                    display: none;
+                                }
+                            }
+
+                            li:nth-child(3) {
+                                width: 20%;
+                                flex: 20%;
+
+                                @include br990 {
+                                    display: none;
+                                }
+                            }
+
+                            li:nth-child(4) {
+                                width: 25%;
+                                flex: 25%;
+
+                                @include br990 {
+                                    display: none;
+                                }
+                            }
+
+                            li:nth-child(5) {
+                                width: 10%;
+                                flex: 10%;
+                                text-align: right;
+
+                                @include br990 {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .my-course {
+                        li:nth-child(1) {
+                            width: 20%;
+                            flex: 20%;
+
+                        }
+
+                        li:nth-child(2) {
+                            width: 45%;
+                            flex: 45%;
+
+                            @include br990 {
+                                display: none;
+                            }
+                        }
+
+                        li:nth-child(3) {
+                            width: 35%;
+                            flex: 35%;
+                            text-align: right;
+
+                            @include br990 {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &__block {
+                        &__bl {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-left: 35px;
+                            padding-right: 35px;
+                            align-items: center;
+                            border-bottom: 1px solid #E9E7E7;
+                            padding-bottom: 15px;
+                            margin-bottom: 15px;
+
+                            &:last-child {
+                                padding-bottom: 0px;
+                                margin-bottom: 15px;
+                                border-bottom: 0px solid #E9E7E7;
+                            }
+
+                            @include br739 {
+                                padding-left: 0px;
+                                padding-right: 0px;
+                            }
+
+                            .img {
+                                flex: 15%;
+
+                                img {
+                                    width: 100px;
+                                    height: 100px;
+                                    border-radius: 10px;
+                                }
+
+                                @include br990 {
+                                    flex: 20%;
+                                    margin-bottom: 30px;
+
+                                    img {
+                                        width: 80px;
+                                        height: 80px;
+                                        border-radius: 5px;
+                                    }
+                                }
+
+                                @include br739 {
+                                    flex: inherit;
+                                    width: 80px;
+                                }
+                            }
+
+                            .name {
+                                flex: 30%;
+
+                                a {
+                                    @include fs(16);
+                                    font-weight: 600;
+                                    margin-bottom: 10px;
+
+                                    &:hover {
+                                        color: #5B712E;
+                                    }
+                                }
+
+                                .color {
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 50%;
+                                    margin-bottom: 10px;
+                                }
+
+                                p {
+                                    span {
+                                        @include fs(14);
+                                    }
+                                }
+
+                                @include br990 {
+                                    flex: 80%;
+                                    margin-bottom: 30px;
+
+                                    img {
+                                        width: 80px;
+                                        height: 80px;
+                                        border-radius: 5px;
+                                    }
+                                }
+
+                                @include br739 {
+                                    flex: 100%;
+                                }
+                            }
+
+                            .amount {
+                                flex: 20%;
+
+                                input {
+                                    width: 80px;
+                                    border: none;
+                                    border-radius: 5px;
+                                    height: 45px;
+                                    background-color: #F5F5F5;
+                                    text-align: center;
+                                    @include fs(16);
+                                    color: #4A4A4A;
+                                }
+
+                                @include br990 {
+                                    flex: inherit;
+                                }
+
+                                @include br500 {
+                                    flex: 100%;
+                                    margin-bottom: 20px;
+                                }
+                            }
+
+                            .price {
+                                flex: 25%;
+
+                                p {
+                                    @include fs(16);
+                                    font-weight: bold;
+                                    color: #5B712E;
+                                }
+
+                                @include br990 {
+                                    flex: inherit;
+                                    margin-left: 30px;
+                                    margin-right: 30px;
+                                }
+
+                                @include br500 {
+                                    margin-left: 0px;
+                                }
+                            }
+
+                            .remove {
+                                flex: 10%;
+                                text-align: right;
+                                align-self: center;
+
+                                a {
+                                    &:hover {
+                                        opacity: 0.4;
+                                    }
+                                }
+
+                                @include br990 {
+                                    flex: inherit;
+                                }
+                            }
+                        }
+
+                        .my-course {
+                            .img {
+                                width: 20%;
+                                flex: 20%;
+                            }
+
+                            .name {
+                                width: 45%;
+                                flex: 45%;
+                            }
+
+                            .remove {
+                                width: 35%;
+                                flex: 35%;
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+
+                .order-list-course {
+                    &__head {
+                        background-color: #F2F3F4;
+                        border-radius: 15px;
+                        padding: 15px 35px 15px 35px;
+                        margin-bottom: 30px;
+                        font-family: 'Roboto', sans-serif;
+
+                        @include br990 {
+                            display: none;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+
+                            li {
+                                @include fs(16);
+                                font-weight: 600;
+                            }
+
+                            li:nth-child(1) {
+                                width: 30%;
+                                flex: 30%;
+                            }
+
+                            li:nth-child(2) {
+                                width: 30%;
+                                flex: 30%;
+                            }
+
+                            li:nth-child(3) {
+                                width: 40%;
+                                flex: 40%;
+                                text-align: right;
+                            }
+                        }
+                    }
+
+                    &__block {
+                        &__bl {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-left: 35px;
+                            padding-right: 35px;
+                            align-items: center;
+                            border-bottom: 1px solid #E9E7E7;
+                            padding-bottom: 15px;
+                            margin-bottom: 15px;
+
+                            &:last-child {
+                                padding-bottom: 0px;
+                                margin-bottom: 15px;
+                                border-bottom: 0px solid #E9E7E7;
+                            }
+
+                            @include br739 {
+                                padding-left: 0px;
+                                padding-right: 0px;
+                            }
+
+                            .name {
+                                flex: 30%;
+
+                                a {
+                                    @include fs(16);
+                                    font-weight: 600;
+
+                                    &:hover {
+                                        color: #5B712E;
+                                    }
+                                }
+
+                                .color {
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 50%;
+                                    margin-bottom: 10px;
+                                }
+
+                                p {
+                                    span {
+                                        @include fs(14);
+                                    }
+                                }
+
+                                @include br990 {
+                                    flex: 80%;
+                                    margin-bottom: 30px;
+
+                                    img {
+                                        width: 80px;
+                                        height: 80px;
+                                        border-radius: 5px;
+                                    }
+                                }
+
+                                @include br739 {
+                                    flex: 100%;
+                                }
+                            }
+
+                            .price {
+                                flex: 30%;
+
+                                p {
+                                    @include fs(16);
+                                    font-weight: bold;
+                                    color: #5B712E;
+                                }
+
+                                @include br500 {
+                                    flex: inherit;
+                                }
+                            }
+
+                            .remove {
+                                flex: 40%;
+                                text-align: right;
+
+                                a {
+                                    &:hover {
+                                        opacity: 0.4;
+                                    }
+                                }
+
+                                @include br500 {
+                                    flex: inherit;
+                                    margin-left: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.avatar-upload {
+    position: relative;
+    max-width: 85px;
+
+    .avatar-edit {
+        position: absolute;
+        right: -15px;
+        z-index: 1;
+        top: -5px;
+
+        input {
+            display: none;
+
+            +label {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                margin-bottom: 0;
+                border-radius: 100%;
+                background: #FFFFFF;
+                border: 1px solid transparent;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+                cursor: pointer;
+                font-weight: normal;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    background: #f1f1f1;
+                    border-color: #d6d6d6;
+                }
+
+                &:after {
+                    content: "";
+                    color: #757575;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    width: 10px;
+                    height: 10px;
+                    margin: auto;
+                    background: no-repeat url(../../assets/img/common/pen-solid.svg);
+                }
+            }
+        }
+    }
+
+    .avatar-preview {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 100%;
+        border: 6px solid #F8F8F8;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+        >div {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

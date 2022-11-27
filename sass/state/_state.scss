@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.is-sp-visible {
+	display: none;
+
+	@include sp {
+		display: block !important;
+	}
+
+	//sp
+}
+
+//sp-visible
+
+.is-sp-invisible {
+	@include sp {
+		display: none !important;
+	}
+
+	//sp
+}
+
+//sp-visible
+
+body.is-lock {
+	overflow: hidden;
+}
+
+.is-hidden-modal {
+	visibility: hidden;
+}
+
+.is-hidden-modal .c-modal-commit__inner {
+	left: -1000%;
+}
+
+.scrollup {
+	width: 66px;
+	height: 66px;
+	position: fixed;
+	bottom: 50px;
+	right: 88px;
+	display: none;
+	text-indent: -9999px;
+	background: no-repeat url(../../assets/img/common/icn_gototop_01.svg);
+	z-index: 20;
+
+	@include br1200 {
+		width: 40px;
+		height: 40px;
+		bottom: 20px;
+		right: 20px;
+		background-size: cover;
+	}
+}

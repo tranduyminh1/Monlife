@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+// ----------------------------------------------------------------------
+// MediaQuery
+// ----------------------------------------------------------------------
+@mixin br1920 {
+
+	// PC表示
+	@media only screen and (min-width: $width-br1920 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br1750 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br1750 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br1600 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br1600 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br1550 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br1550 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br1500 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br1500 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br1450 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br1450 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br1350 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br1350 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br1300 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br1300 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br1200 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br1200 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br1079 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br1079 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br1060 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br1060 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br990 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br990 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br890 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br890 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br739 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br739 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br690 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br690 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br500 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br500 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br370 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br370 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin br310 {
+
+	// PC表示
+	@media screen and (min-width: $width-br200 ) and (max-width: $width-br310 + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin tablet {
+
+	// タブレット表示
+	@media only screen and (min-width: $width-smartphone + $width-scrollbar) and (max-width: $width-tablet + $width-scrollbar - 1) {
+		@content;
+	}
+}
+
+@mixin tablet1 {
+
+	// タブレット表示 1段階目(大)
+	@media only screen and (min-width: $width-tablet2 + $width-scrollbar) and (max-width: $width-tablet1 + $width-scrollbar - 1) {
+		@content;
+	}
+}
+
+@mixin tablet2 {
+
+	// タブレット表示 2段階目(小)
+	@media only screen and (min-width: $width-smartphone + $width-scrollbar) and (max-width: $width-tablet2 + $width-scrollbar - 1) {
+		@content;
+	}
+}
+
+@mixin sp {
+
+	// スマートフォン表示
+	@media only screen and (max-width: $width-smartphone + $width-scrollbar - 1) {
+		@content;
+	}
+}
+
+@mixin tb {
+
+	// スマートフォン表示
+	@media only screen and (max-width: $width-br1400 + $width-scrollbar - 1) {
+		@content;
+	}
+}

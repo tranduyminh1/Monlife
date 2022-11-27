@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+.c-share {
+    ul {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            a {
+                margin-left: 10px;
+            }
+
+            .social {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #4A4A4A;
+
+                &:hover {
+                    background-color: #5B712E;
+                }
+
+                i {
+                    color: #fff;
+                    @include fs(18);
+                }
+            }
+
+            .bookmark {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #4A4A4A;
+
+                &:hover {
+                    background-color: #5B712E;
+                }
+
+                i {
+                    color: #fff;
+                    @include fs(18);
+                }
+            }
+
+            .zalo {
+                width: 40px;
+                height: 40px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+
+                    &:last-child {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    img {
+                        &:first-child {
+                            display: none;
+                        }
+
+                        &:last-child {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

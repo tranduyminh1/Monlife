@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+.c-subscription {
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+
+	&__transaction {
+		position: fixed;
+		z-index: 10;
+		bottom: 0%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.6);
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	}
+
+	&__inner {
+		position: absolute;
+		z-index: 9999;
+		top: 50%;
+		left: 50%;
+		width: 1000px;
+		height: 550px;
+		background-color: #FFFFFF;
+		transform: translate(-50%, -50%) !important;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		border-radius: 30px;
+
+		@include br990 {
+			width: 90%;
+		}
+
+		@include br690 {
+			width: 90%;
+			height: 400px;
+		}
+
+		.block {
+			display: flex;
+			flex-wrap: wrap;
+
+			&__img {
+				width: 400px;
+				border-radius: 30px 0px 0px 30px;
+				overflow: hidden;
+
+				@include br990 {
+					display: none;
+				}
+			}
+
+			&__form {
+				flex: 1;
+				padding: 60px;
+
+				@include br690 {
+					padding: 30px;
+				}
+
+				h3 {
+					@include fs(44);
+					text-align: center;
+					text-transform: uppercase;
+					font-weight: 900;
+					margin-bottom: 10px;
+
+					@include br690 {
+						@include fs(36);
+					}
+
+					@include br500 {
+						@include fs(30);
+					}
+				}
+
+				p {
+					text-align: center;
+					font-weight: 800;
+					@include fs(20);
+					margin-bottom: 60px;
+
+					@include br690 {
+						@include fs(16);
+						font-weight: normal;
+						margin-bottom: 30px;
+					}
+
+					@include br500 {
+						@include fs(14);
+						margin-bottom: 20px;
+					}
+				}
+
+				&__input {
+					&__field {
+						margin-bottom: 15px;
+					}
+
+					&__btn {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						.c-btn {
+							display: flex;
+							background-color: #5B712E;
+							border-radius: 30px;
+							width: 350px;
+							height: 55px;
+							justify-content: center;
+							align-items: center;
+							border: none;
+							@include fs(20);
+							font-weight: bold;
+							text-transform: uppercase;
+
+							&:hover {
+								background-color: #F6EFE5;
+								font-weight: bold;
+							}
+
+							@include br500 {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__close {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			z-index: 99;
+
+			&:hover {
+				opacity: 0.5;
+			}
+
+			img {
+				width: 31px;
+				height: 31px;
+			}
+		}
+	}
+}

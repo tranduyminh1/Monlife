@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.c-affiliate {
+    margin-bottom: 60px;
+
+    &__inner {
+        max-width: 1260px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 15px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                flex: 1;
+
+                a {
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.p-page404 {
+    &__inner {
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 15px;
+
+        img {
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+
+        .c-btn {
+            margin-bottom: 50px;
+        }
+    }
+}

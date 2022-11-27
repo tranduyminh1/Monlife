@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+.c-collapse {
+	&__accordion-item {}
+
+	&__accordion-thumb {
+		color: #4A4A4A;
+		@include fs(18);
+		margin-bottom: 10px;
+		padding: 20px 25px 20px 25px;
+		cursor: pointer;
+		position: relative;
+		background-color: #D9D9D9;
+		border-radius: 10px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: normal;
+
+		&:hover {
+			background-color: #5B712E;
+			color: #fff;
+		}
+
+		img {
+			width: 23px;
+			vertical-align: baseline;
+			position: absolute;
+			right: 25px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		img:first-child {
+			display: none;
+		}
+
+		img:last-child {
+			display: inline-block;
+		}
+	}
+
+	&__accordion-panel {
+		display: none;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		font-family: 'Roboto', sans-serif;
+
+		ul {
+			margin-left: 30px;
+
+			li {
+				margin-bottom: 10px;
+				list-style-type: disc;
+				padding-left: 10px;
+
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+
+		p {
+			@include fs(16);
+			margin-bottom: 20px;
+			line-height: 1.6;
+			font-family: 'Roboto', sans-serif;
+
+			&:last-child {
+				margin-bottom: 0px;
+			}
+
+			@include br990 {
+				margin-bottom: 15px;
+			}
+		}
+
+		span {
+			@include fs(16);
+			margin-bottom: 20px;
+			line-height: 1.6;
+			font-family: 'Roboto', sans-serif;
+
+			&:last-child {
+				margin-bottom: 0px;
+			}
+
+			@include br990 {
+				margin-bottom: 15px;
+			}
+		}
+
+		a {
+			margin-bottom: 20px;
+			@include fs(16);
+			display: block;
+
+			&:hover {
+				color: #5B712E;
+			}
+		}
+
+		h6 {
+			margin-bottom: 20px;
+		}
+
+		h5 {
+			margin-bottom: 20px;
+		}
+
+		h4 {
+			margin-bottom: 20px;
+		}
+
+		h3 {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__tskt {
+		li {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 25px;
+			margin-right: -5px;
+			margin-left: -5px;
+
+			@include br1060 {
+				margin-bottom: 15px;
+			}
+
+			span {
+				flex: 50%;
+				width: 50%;
+				color: #A6A6A6;
+				@include fs(14);
+				padding-right: 5px;
+				padding-left: 5px;
+				line-height: 1.6;
+			}
+
+			span:nth-child(1) {
+				font-family: 'SVN-Poppins', sans-serif;
+				font-weight: bold;
+			}
+
+			span:nth-child(2) {
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+.is-active .c-collapse__accordion-thumb {
+	margin-bottom: 0px !important;
+}
+
+.is-active {
+	.c-collapse__accordion-thumb {
+		margin-bottom: 0px !important;
+
+		img:first-child {
+			display: inline-block !important;
+		}
+
+		img:last-child {
+			display: none !important;
+		}
+	}
+}

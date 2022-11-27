@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+.p-course {
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    @include br1200 {
+        padding-top: 105px;
+    }
+
+    @include br500 {
+        padding-top: 79px;
+    }
+
+    &__inner {
+        max-width: 1260px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 15px;
+
+        &__title {
+            margin-bottom: 40px;
+
+            h2 {
+                @include fs(28);
+                font-weight: 900;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+                li {
+                    margin-right: 30px;
+                    padding-right: 30px;
+                    position: relative;
+
+                    @include br890 {
+                        margin-right: 20px;
+                        padding-right: 20px;
+                    }
+
+                    a {
+                        @include fs(16);
+                        font-family: 'Roboto', sans-serif;
+
+                        &:hover {
+                            color: #5B712E;
+                        }
+
+                        @include br890 {
+                            @include fs(14);
+                        }
+                    }
+
+                    p {
+                        @include fs(16);
+                        font-family: 'Roboto', sans-serif;
+
+                        @include br890 {
+                            @include fs(14);
+                        }
+                    }
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 12px;
+                        right: -7px;
+                        top: 50%;
+                        background: no-repeat url(../../assets/img/common/icn_arrow-left_01.svg);
+                        transform: translateY(-50%);
+                        background-size: cover;
+
+                        @include br890 {
+                            right: -9px;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                        padding-right: 0px;
+                        align-self: center;
+
+                        &:after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__block {
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -15px;
+                margin-right: -15px;
+
+                @include br690 {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+
+                .col {
+                    flex: 50%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+
+                    @include br690 {
+                        flex: 100%;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        margin-bottom: 20px;
+                    }
+
+                    &__box {
+                        background: #FFFFFF;
+                        box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.2);
+                        border-radius: 20px;
+                        overflow: hidden;
+
+                        &__img {}
+
+                        &__text {
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            padding-top: 30px;
+
+                            &__rating {
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+
+                                &__colleft {
+                                    @include br1200 {
+                                        flex: 100%;
+                                        margin-bottom: 20px;
+                                    }
+
+                                    p {}
+                                }
+
+                                &__colright {
+                                    @include br1200 {
+                                        flex: 100%;
+                                    }
+
+                                    .c-ranking {
+                                        margin-top: 0px;
+                                        margin-bottom: 0px;
+                                    }
+                                }
+                            }
+
+                            .name {
+                                margin-bottom: 10px;
+
+                                h3 {
+                                    @include fs(26);
+                                    font-weight: 800;
+
+                                    span {
+                                        color: #5B712E;
+                                    }
+
+                                    @include br890 {
+                                        @include fs(22);
+                                    }
+                                }
+                            }
+
+                            .price {
+                                margin-bottom: 20px;
+
+                                ul {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: center;
+
+                                    li:first-child {
+                                        position: relative;
+                                        padding-left: 35px;
+
+                                        @include br990 {
+                                            flex: 100%;
+                                            margin-bottom: 20px;
+                                        }
+
+                                        &:after {
+                                            content: "";
+                                            position: absolute;
+                                            width: 26px;
+                                            height: 26px;
+                                            left: 0px;
+                                            top: -1px;
+                                            background: no-repeat url(../../assets/img/course/icn_money.png);
+                                        }
+                                    }
+
+                                    li:last-child {
+                                        margin-left: 20px;
+
+                                        @include br990 {
+                                            margin-left: 0px;
+                                        }
+
+                                        p {
+                                            @include fs(20);
+                                            color: #E54C78;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &__btn {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            padding-bottom: 30px;
+
+                            &__coll {
+                                flex: 50%;
+
+                                @include br990 {
+                                    flex: 100%;
+                                    margin-bottom: 20px;
+                                }
+
+                                .c-btn {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: 40px;
+                                    border-radius: 10px;
+                                }
+                            }
+
+                            &__colr {
+                                flex: 50%;
+
+                                @include br990 {
+                                    flex: 100%;
+                                }
+
+                                .c-share ul li .social {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #4A4A4A;
+
+                                    &:hover {
+                                        background-color: #5B712E;
+                                    }
+                                }
+
+                                .c-share ul li .bookmark {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #4A4A4A;
+
+                                    &:hover {
+                                        background-color: #5B712E;
+                                    }
+                                }
+
+                                .c-share ul li .zalo {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+
+                                .c-share ul li .zalo img {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.note {
+    .date {
+        margin-bottom: 20px;
+
+        p {
+            span {
+                color: #BF0000;
+                @include fs(16);
+                font-weight: bold;
+            }
+        }
+    }
+
+    .time {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #f0f0f0;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            li:first-child {
+                position: relative;
+                padding-left: 35px;
+
+                @include br990 {
+                    flex: 100%;
+                    margin-bottom: 20px;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 26px;
+                    height: 26px;
+                    left: 0px;
+                    top: -1px;
+                    background: no-repeat url(../../assets/img/course/icn_time.png);
+                }
+            }
+
+            li:last-child {
+                margin-left: 20px;
+
+                @include br990 {
+                    margin-left: 0px;
+                }
+
+                p {
+                    @include fs(20);
+                    color: #E54C78;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .process {
+        margin-bottom: 20px;
+
+        &__line {
+            background-color: #D8D8D8;
+            position: relative;
+            height: 13px;
+            width: 100%;
+            border-radius: 40px;
+
+            &__done {
+                position: absolute;
+                border-radius: 40px;
+                left: 0px;
+                height: 13px;
+                background-color: #5B712E;
+            }
+        }
+
+        p {
+            margin-top: 5px;
+        }
+    }
+}

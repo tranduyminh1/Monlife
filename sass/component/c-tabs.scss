@@ -1,0 +1,14 @@
+/* Tabs */
+.tabs {
+    &__head {
+        border-bottom: 1px solid #D8D8D8;
+
+        &__inner {
+            max-width: 1260px;
+            margin: 0 auto;
+            position: relative;
+            padding: 0 15px;
+
+        }
+    }
+}

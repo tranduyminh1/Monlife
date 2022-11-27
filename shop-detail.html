@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Monlife</title>
+	<link rel="icon" type="image/png" href="./assets/img/common/favicon.png">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Pacifico&family=Prata&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+		rel="stylesheet">
+	<!-- End header -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/slick.css">
+	<link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
+	<link href="./assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Menu mobile -->
+	<section class="c-menu-mobile">
+		<div class="c-menu-mobile__inner">
+			<div class="c-menu-mobile__search">
+				<input type="text" placeholder="Nhập nội dung cần tìm...">
+				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			</div>
+			<div class="c-menu-mobile__inner__navigation">
+				<ul class="navigation">
+					<li><a class="active" href="index.html">TRANG CHỦ</a></li>
+					<li><a href="ve-chung-toi.html">VỀ CHÚNG TÔI</a></li>
+					<li><a href="khoa-hoc-dua-mon-ve-nha.html">KHÓA HỌC ĐƯA MON VỀ NHÀ</a></li>
+					<li><a href="montessori.html">MONTESSORI</a></li>
+					<li><a href="shop.html">SHOP</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="tai-lieu-mien-phi.html">TÀI LIỆU MIỄN PHÍ</a></li>
+					<li><a href="lien-he.html">LIÊN HỆ</a></li>
+				</ul>
+			</div>
+			<div class="hotline">
+				<ul class="hotline__bl">
+					<li>
+						<img src="./assets/img/common/icn_phone-solid_01.svg" alt="Monlife">
+					</li>
+					<li>
+						<span>+84 (907) 909 209</span>
+					</li>
+				</ul>
+				<ul class="hotline__share">
+					<li>
+						<a href="#"><img src="./assets/img/common/icn_facebook_01.svg" alt="Share"></a>
+					</li>
+					<li>
+						<a href="#"><img src="./assets/img/common/icn_instagram_01.svg" alt="Share"></a>
+					</li>
+					<li>
+						<a href="#"><img src="./assets/img/common/icn_youtube_01.svg" alt="Share"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- End menu mobile -->
+
+	<!-- Header -->
+	<header class="l-header">
+		<!-- Top -->
+		<div class="l-header__inner">
+			<div class="l-header__inner__row">
+				<!-- Hotline -->
+				<div class="l-header__inner__row__hotline">
+					<ul class="hotline">
+						<li>
+							<img src="./assets/img/common/icn_phone-solid_01.svg" alt="Monlife">
+						</li>
+						<li>
+							<span>+84 (907) 909 209</span>
+						</li>
+					</ul>
+					<ul class="share">
+						<li>
+							<a href="#"><img src="./assets/img/common/icn_facebook_01.svg" alt="Share"></a>
+						</li>
+						<li>
+							<a href="#"><img src="./assets/img/common/icn_instagram_01.svg" alt="Share"></a>
+						</li>
+						<li>
+							<a href="#"><img src="./assets/img/common/icn_youtube_01.svg" alt="Share"></a>
+						</li>
+					</ul>
+				</div>
+				<!-- Logo -->
+				<div class="l-header__inner__row__logo">
+					<a href="#"><img src="./assets/img/common/fig_logo_01-01.svg" alt="Monlife"></a>
+				</div>
+				<!-- Setting -->
+				<div class="l-header__inner__row__setting">
+					<div class="search">
+						<div class="c-dropdown">
+							<a href="#" class="search__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_search_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Nhập nội dung cần tìm...">
+									<div class="input-group-btn">
+										<button type="button"><i class="fas fa-search"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart">
+						<div class="c-dropdown">
+							<a href="#" class="cart__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_cart_01.svg" alt="Cart">
+								<p>01</p>
+							</a>
+							<div class="dropdown">
+								<h3>Giỏ Hàng</h3>
+								<div class="cart__block">
+									<div class="cart__block__bl">
+										<div class="img">
+											<img src="./assets/img/common/img_pro-1.jpg" alt="Product">
+										</div>
+										<div class="text">
+											<a href="#">Montessori Floor Bed</a>
+											<ul>
+												<li>
+													<p>Size: <span>Twin Size</span></p>
+												</li>
+												<li>
+													<p>Color: <span>Finished Birch</span></p>
+												</li>
+												<li>
+													<p>Sides: <span>1 Low Side + 1 High Side</span></p>
+												</li>
+											</ul>
+											<h4>2.000.000 VNĐ</h4>
+										</div>
+										<a class="remove" href="#"><img src="./assets/img/common/icn_close_01.svg"
+												alt="Close"></a>
+									</div>
+									<div class="cart__block__bl">
+										<div class="img">
+											<img src="./assets/img/common/img_pro-1.jpg" alt="Product">
+										</div>
+										<div class="text">
+											<a href="#">Montessori Floor Bed</a>
+											<ul>
+												<li>
+													<p>Size: <span>Twin Size</span></p>
+												</li>
+												<li>
+													<p>Color: <span>Finished Birch</span></p>
+												</li>
+												<li>
+													<p>Sides: <span>1 Low Side + 1 High Side</span></p>
+												</li>
+											</ul>
+											<h4>2.000.000 VNĐ</h4>
+										</div>
+										<a class="remove" href="#"><img src="./assets/img/common/icn_close_01.svg"
+												alt="Close"></a>
+									</div>
+								</div>
+								<div class="cart__checkouts">
+									<ul class="amount">
+										<li>Số lượng</li>
+										<li>02</li>
+									</ul>
+									<ul class="total">
+										<li>Thành tiền</li>
+										<li>4.000.000 VNĐ</li>
+									</ul>
+									<button type="button" class="c-btn">Thanh toán</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Nav mobile -->
+				<div class="l-header__inner__row__mobile">
+					<div class="js-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Nav -->
+		<div class="l-header__nav">
+			<div class="l-header__nav__inner">
+				<ul class="nav-menu">
+					<li><a class="active" href="index.html">TRANG CHỦ</a></li>
+					<li><a href="ve-chung-toi.html">VỀ CHÚNG TÔI</a></li>
+					<li><a href="khoa-hoc-dua-mon-ve-nha.html">KHÓA HỌC ĐƯA MON VỀ NHÀ</a></li>
+					<li><a href="montessori.html">MONTESSORI</a></li>
+					<li><a href="shop.html">SHOP</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="tai-lieu-mien-phi.html">TÀI LIỆU MIỄN PHÍ</a></li>
+					<li><a href="lien-he.html">LIÊN HỆ</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Header Scroll -->
+		<div class="l-header__scroll">
+			<div class="l-header__scroll__inner">
+				<div class="logo">
+					<a href="#"><img src="./assets/img/common/fig_logo_01-01.svg" alt="Monlife"></a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a class="active" href="index.html">TRANG CHỦ</a></li>
+						<li><a href="ve-chung-toi.html">VỀ CHÚNG TÔI</a></li>
+						<li><a href="khoa-hoc-dua-mon-ve-nha.html">KHÓA HỌC ĐƯA MON VỀ NHÀ</a></li>
+						<li><a href="montessori.html">MONTESSORI</a></li>
+						<li><a href="shop.html">SHOP</a></li>
+						<li><a href="blog.html">BLOG</a></li>
+						<li><a href="tai-lieu-mien-phi.html">TÀI LIỆU MIỄN PHÍ</a></li>
+						<li><a href="lien-he.html">LIÊN HỆ</a></li>
+					</ul>
+				</div>
+				<div class="social">
+					<ul>
+						<li>
+							<a href="#"><img src="./assets/img/common/icn_facebook_01.svg" alt="Share"></a>
+						</li>
+						<li>
+							<a href="#"><img src="./assets/img/common/icn_instagram_01.svg" alt="Share"></a>
+						</li>
+						<li>
+							<a href="#"><img src="./assets/img/common/icn_youtube_01.svg" alt="Share"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End header -->
+
+	<!-- Checkout content -->
+	<div class="c-breadcrumb" style="background: no-repeat url(./assets/img/common/img_breabcrumb_02.jpg);">
+		<div class="c-breadcrumb__inner">
+			<h2>Shop</h2>
+			<ul>
+				<li>
+					<a href="#">Trang chủ</a>
+				</li>
+				<li>
+					<p>Shop</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="p-shop">
+		<div class="p-shop__inner">
+			<div class="p-shop__inner__detail container">
+				<div id="sidebar" class="gallery">
+					<aside class="sidebar__inner natural-wd natural">
+						<div>
+							<div class="cSlider cSlider--single">
+								<div class="cSlider__item">
+									<a data-fancybox="gallery" href="./assets/img/shop/img_shop_01.jpg"
+										data-caption="Caption #1">
+										<img src="./assets/img/shop/img_shop_01.jpg" alt="Shop">
+									</a>
+								</div>
+								<div class="cSlider__item">
+									<a data-fancybox="gallery" href="./assets/img/shop/img_shop_02.jpg"
+										data-caption="Caption #1">
+										<img src="./assets/img/shop/img_shop_02.jpg" alt="Shop">
+									</a>
+								</div>
+								<div class="cSlider__item">
+									<a data-fancybox="gallery" href="./assets/img/shop/img_shop_02.jpg"
+										data-caption="Caption #1">
+										<img src="./assets/img/shop/img_shop_02.jpg" alt="Shop">
+									</a>
+								</div>
+								<div class="cSlider__item">
+									<a data-fancybox="gallery" href="./assets/img/shop/img_shop_01.jpg"
+										data-caption="Caption #1">
+										<img src="./assets/img/shop/img_shop_01.jpg" alt="Shop">
+									</a>
+								</div>
+								<div class="cSlider__item">
+									<a data-fancybox="gallery" href="./assets/img/shop/img_shop_02.jpg"
+										data-caption="Caption #1">
+										<img src="./assets/img/shop/img_shop_02.jpg" alt="Shop">
+									</a>
+								</div>
+								<div class="cSlider__item">
+									<a data-fancybox="gallery" href="./assets/img/shop/img_shop_02.jpg"
+										data-caption="Caption #1">
+										<img src="./assets/img/shop/img_shop_02.jpg" alt="Shop">
+									</a>
+								</div>
+							</div>
+							<div class="cSlider cSlider--nav">
+								<div class="cSlider__item">
+									<img src="./assets/img/shop/img_shop_01.jpg" alt="Shop">
+								</div>
+								<div class="cSlider__item">
+									<img src="./assets/img/shop/img_shop_02.jpg" alt="Shop">
+								</div>
+								<div class="cSlider__item">
+									<img src="./assets/img/shop/img_shop_03.jpg" alt="Shop">
+								</div>
+								<div class="cSlider__item">
+									<img src="./assets/img/shop/img_shop_01.jpg" alt="Shop">
+								</div>
+								<div class="cSlider__item">
+									<img src="./assets/img/shop/img_shop_02.jpg" alt="Shop">
+								</div>
+								<div class="cSlider__item">
+									<img src="./assets/img/shop/img_shop_03.jpg" alt="Shop">
+								</div>
+							</div>
+						</div>
+					</aside>
+				</div>
+				<div id="content" class="info">
+					<h2 class="title">Dish Washing Station / Sensory Table with Tubs</h2>
+					<p class="price">3.000.000 VNĐ</p>
+					<div class="c-ranking">
+						<ul>
+							<li>
+								<div class="c-ranking__list">
+									<i class="fa fa-star active"></i>
+									<i class="fa fa-star active"></i>
+									<i class="fa fa-star active"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</li>
+							<li>
+								<p>35 Đánh giá</p>
+							</li>
+						</ul>
+					</div>
+					<div class="options">
+						<p>Kích thước</p>
+						<ul>
+							<li>
+								<a class="active" href="#">18"</a>
+							</li>
+							<li>
+								<a href="#">22"</a>
+							</li>
+						</ul>
+					</div>
+					<div class="options">
+						<p>Tub Orientaion</p>
+						<ul>
+							<li>
+								<a href="#">2 Tubs - Center</a>
+							</li>
+							<li>
+								<a href="#">3 Tubs - Center</a>
+							</li>
+						</ul>
+					</div>
+					<div class="options">
+						<p>Size</p>
+						<ul>
+							<li>
+								<a href="#">48</a>
+							</li>
+							<li>
+								<a href="#">65</a>
+							</li>
+						</ul>
+					</div>
+					<div class="group-btn">
+						<div class="count">
+							<div class="count__field">
+								<button type="button" class="count__field__add sub" id="sub2">-</button>
+								<input class="count__field__form" type="number" id="inputnumber" value="1" min="1"
+									max="5">
+								<button class="count__field__min add" type="button" id="add2">+</button>
+							</div>
+						</div>
+						<div class="group-btn__btn">
+							<ul>
+								<li>
+									<span>18" / 2 Tubs - Center / 48</span>
+									<a class="add-cart" href="#">THÊM VÀO GIỎ HÀNG : 3.000.000 VNĐ</a>
+								</li>
+								<li>
+									<a class="qr-code" href="#!">THANH TOÁN BẰNG QR CODE</a>
+								</li>
+								<li>
+									<a class="affiliate-btn1" href="#">MUA HÀNG TỪ SHOPEE</a>
+								</li>
+								<li>
+									<a class="affiliate-btn2" href="#">MUA HÀNG TỪ LAZADA</a>
+								</li>
+							</ul>
+							<p>Leaves our workshop within 4-5 weeks.</p>
+						</div>
+					</div>
+					<div class="product-description">
+						<p>Low beds are a great way to encourage autonomy and freedom in the early developmental stages
+							of your child’s life. With the Birch Montessori Floor Bed, they can enter and leave when
+							they feel the need, letting them regulate their sleep according to their body's needs. This
+							independence helps them learn about physical boundaries and develop spatial awareness while
+							staying safe thanks to the bed's low height. Plus, the frame lifts the mattress from the
+							ground to stop mildew from growing!</p>
+						<ul class="feature">
+							<li>
+								<img src="./assets/img/shop/icn_feature_01.svg" alt="Shop">
+								<span>Holds adults</span>
+							</li>
+							<li>
+								<img src="./assets/img/shop/icn_feature_02.svg" alt="Shop">
+								<span>Accessible to small children</span>
+							</li>
+							<li>
+								<img src="./assets/img/shop/icn_feature_03.svg" alt="Shop">
+								<span>Flippable</span>
+							</li>
+						</ul>
+						<div class="product-description__collapse">
+							<div class="c-collapse">
+								<div class="c-collapse__accordion-item is-active">
+									<h3 class="c-collapse__accordion-thumb">
+										Kích thước chi tiết
+										<img class="bct" src="./assets/img/common/icn_arrow_down_collapase_01.svg"
+											alt="">
+										<img class="bct" src="./assets/img/common/icn_arrow_down_collapase_01a.svg"
+											alt="">
+									</h3>
+									<div class="c-collapse__accordion-panel">
+										<ul>
+											<li>Long-lasting with quality materials and the ability to flip</li>
+											<li>Easily store for the next child/ pack flat to move or ship</li>
+											<li>Tool-less assembly</li>
+											<li>Finished smooth with no-VOC, UV-cured finish (safe for children</li>
+											<li>Made from durable, beautiful Baltic Birch</li>
+											<li>Rigorous safety testing</li>
+											<li>250 lb weight capacity</li>
+										</ul>
+									</div>
+								</div>
+								<div class="c-collapse__accordion-item is-mobile">
+									<h3 class="c-collapse__accordion-thumb">
+										Vật liệu
+										<img class="bct" src="./assets/img/common/icn_arrow_down_collapase_01.svg"
+											alt="">
+										<img class="bct" src="./assets/img/common/icn_arrow_down_collapase_01a.svg"
+											alt="">
+									</h3>
+									<div class="c-collapse__accordion-panel">
+										<p>Long-lasting with quality materials and the ability to flip Easily store for
+											the next child/ pack flat to move or ship Tool-less assembly Finished smooth
+											with no-VOC, UV-cured finish (safe for children</p>
+									</div>
+								</div>
+								<div class="c-collapse__accordion-item">
+									<h3 class="c-collapse__accordion-thumb">
+										Tính năng
+										<img class="bct" src="./assets/img/common/icn_arrow_down_collapase_01.svg"
+											alt="">
+										<img class="bct" src="./assets/img/common/icn_arrow_down_collapase_01a.svg"
+											alt="">
+									</h3>
+									<div class="c-collapse__accordion-panel">
+										<a href="#">Long-lasting with quality materials and the ability to flip</a>
+										<span>Long-lasting with quality materials and the ability to flip</span>
+										<h6>Easily store for the next child/ pack flat to move or ship</h6>
+										<h5>Tool-less assembly</h5>
+										<h4>Finished smooth with no-VOC, UV-cured finish (safe for children</h4>
+										<h3>Made from durable, beautiful Baltic Birch</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Customer review -->
+			<div class="p-shop__inner__review">
+				<div class="p-shop__inner__review__header">
+					<h3>Phản hồi khách hàng</h3>
+					<div class="c-ranking">
+						<ul>
+							<li>
+								<div class="c-ranking__list">
+									<i class="fa fa-star active"></i>
+									<i class="fa fa-star active"></i>
+									<i class="fa fa-star active"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</li>
+							<li>
+								<p>35 Đánh giá</p>
+							</li>
+						</ul>
+					</div>
+					<a href="#!" class="write-button">Viết đánh giá</a>
+				</div>
+				<div class="p-shop__inner__review__form" style="display: none;">
+					<h3>Viết đánh giá</h3>
+					<div class="form-group">
+						<div class="form-group__form">
+							<label>Họ và tên</label>
+							<input type="text" class="form-control" placeholder="Nhập họ và tên">
+						</div>
+						<div class="form-group__form">
+							<label>Email</label>
+							<input type="text" class="form-control" placeholder="Email">
+						</div>
+						<div class="form-group__form">
+							<label>Tiêu đề</label>
+							<input type="text" class="form-control" placeholder="Nhập tiêu đề">
+						</div>
+						<div class="form-group__form">
+							<div class="c-ranking">
+								<div class="c-ranking__stars">
+									<div class="rating-group">
+										<label aria-label="1 star" class="rating__label" for="rating3-1"><i
+												class="rating__icon rating__icon--star fa fa-star"></i></label>
+										<input class="rating__input" name="rating3" id="rating3-1" value="1"
+											type="radio">
+										<label aria-label="2 stars" class="rating__label" for="rating3-2"><i
+												class="rating__icon rating__icon--star fa fa-star"></i></label>
+										<input class="rating__input" name="rating3" id="rating3-2" value="2"
+											type="radio">
+										<label aria-label="3 stars" class="rating__label" for="rating3-3"><i
+												class="rating__icon rating__icon--star fa fa-star"></i></label>
+										<input class="rating__input" name="rating3" id="rating3-3" value="3"
+											type="radio">
+										<label aria-label="4 stars" class="rating__label" for="rating3-4"><i
+												class="rating__icon rating__icon--star fa fa-star"></i></label>
+										<input class="rating__input" name="rating3" id="rating3-4" value="4"
+											type="radio">
+										<label aria-label="5 stars" class="rating__label" for="rating3-5"><i
+												class="rating__icon rating__icon--star fa fa-star"></i></label>
+										<input class="rating__input" name="rating3" id="rating3-5" value="5"
+											type="radio">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group__form">
+							<label>Đánh giá</label>
+							<textarea class="form-control" placeholder="Viết đánh giá"></textarea>
+						</div>
+						<div class="form-group__form">
+							<button type="submit" class="c-btn">Gửi đánh giá</button>
+						</div>
+					</div>
+				</div>
+				<div class="p-shop__inner__review__body">
+					<ul>
+						<li>
+							<div class="block">
+								<div class="c-ranking">
+									<ul>
+										<li>
+											<div class="c-ranking__list">
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+										</li>
+										<li>
+											<p>35 Đánh giá</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Công cụ cuộc sống thực tế tuyệt vời!</h3>
+								<h4>Duy Minh 1/11/2022</h4>
+								<p>Con trai tôi 16 tháng tuổi và đang trong giai đoạn nhạy cảm với cuộc sống thực tế.
+									Đứng trên tháp, anh ấy có thể tham gia vào việc chuẩn bị bữa ăn, "dỡ" giá trên cùng
+									của máy rửa bát, rửa tay và lau bát đĩa ở bồn rửa và nhiều hơn thế nữa. Thật dễ dàng
+									để quét sạch các đống lộn xộn và di chuyển nó khi chúng ta không sử dụng nó. Tòa
+									tháp rất dễ lắp ráp và tôi cảm thấy con tôi hoàn toàn an toàn khi ở trong đó. Tôi
+									rất khuyên bạn nên!</p>
+							</div>
+						</li>
+						<li>
+							<div class="block">
+								<div class="c-ranking">
+									<ul>
+										<li>
+											<div class="c-ranking__list">
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+										</li>
+										<li>
+											<p>35 Đánh giá</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Công cụ cuộc sống thực tế tuyệt vời!</h3>
+								<h4>Duy Minh 1/11/2022</h4>
+								<p>Con trai tôi 16 tháng tuổi và đang trong giai đoạn nhạy cảm với cuộc sống thực tế.
+									Đứng trên tháp, anh ấy có thể tham gia vào việc chuẩn bị bữa ăn, "dỡ" giá trên cùng
+									của máy rửa bát, rửa tay và lau bát đĩa ở bồn rửa và nhiều hơn thế nữa. Thật dễ dàng
+									để quét sạch các đống lộn xộn và di chuyển nó khi chúng ta không sử dụng nó. Tòa
+									tháp rất dễ lắp ráp và tôi cảm thấy con tôi hoàn toàn an toàn khi ở trong đó. Tôi
+									rất khuyên bạn nên!</p>
+							</div>
+						</li>
+						<li>
+							<div class="block">
+								<div class="c-ranking">
+									<ul>
+										<li>
+											<div class="c-ranking__list">
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+										</li>
+										<li>
+											<p>35 Đánh giá</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Công cụ cuộc sống thực tế tuyệt vời!</h3>
+								<h4>Duy Minh 1/11/2022</h4>
+								<p>Con trai tôi 16 tháng tuổi và đang trong giai đoạn nhạy cảm với cuộc sống thực tế.
+									Đứng trên tháp, anh ấy có thể tham gia vào việc chuẩn bị bữa ăn, "dỡ" giá trên cùng
+									của máy rửa bát, rửa tay và lau bát đĩa ở bồn rửa và nhiều hơn thế nữa. Thật dễ dàng
+									để quét sạch các đống lộn xộn và di chuyển nó khi chúng ta không sử dụng nó. Tòa
+									tháp rất dễ lắp ráp và tôi cảm thấy con tôi hoàn toàn an toàn khi ở trong đó. Tôi
+									rất khuyên bạn nên!</p>
+							</div>
+						</li>
+						<li>
+							<div class="block">
+								<div class="c-ranking">
+									<ul>
+										<li>
+											<div class="c-ranking__list">
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star active"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+										</li>
+										<li>
+											<p>35 Đánh giá</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Công cụ cuộc sống thực tế tuyệt vời!</h3>
+								<h4>Duy Minh 1/11/2022</h4>
+								<p>Con trai tôi 16 tháng tuổi và đang trong giai đoạn nhạy cảm với cuộc sống thực tế.
+									Đứng trên tháp, anh ấy có thể tham gia vào việc chuẩn bị bữa ăn, "dỡ" giá trên cùng
+									của máy rửa bát, rửa tay và lau bát đĩa ở bồn rửa và nhiều hơn thế nữa. Thật dễ dàng
+									để quét sạch các đống lộn xộn và di chuyển nó khi chúng ta không sử dụng nó. Tòa
+									tháp rất dễ lắp ráp và tôi cảm thấy con tôi hoàn toàn an toàn khi ở trong đó. Tôi
+									rất khuyên bạn nên!</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Pagination -->
+				<div class="c-pagination">
+					<ul>
+						<li class="next">
+							<a href="#"><i class="fas fa-chevron-left"></i></a>
+						</li>
+						<li>
+							<a class="active" href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">...</a>
+						</li>
+						<li>
+							<a href="#">20</a>
+						</li>
+						<li class="pre">
+							<a href="#"><i class="fas fa-chevron-right"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="other-shop-blog">
+					<h3>Bài viết và videos liên quan</h3>
+					<ul>
+						<li>
+							<div class="blog">
+								<div class="img">
+									<img src="./assets/img/shop/img_text_02.jpg" alt="Monlife">
+								</div>
+								<div class="title">
+									<h4><img src="./assets/img/shop/icn_youtube_01.svg" alt="Monlife"> <a
+											href="#">YouTube
+											video</a></h4>
+									<h5><a href="#">Floor Bed Questions Answered</a></h5>
+									<p>The Hapa family shares tips for safety, how to respond when kids get out of bed,
+										and
+										helping your baby learn to fall asleep solo.</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="blog">
+								<div class="img">
+									<img src="./assets/img/shop/img_text_03.jpg" alt="Monlife">
+								</div>
+								<div class="title">
+									<h4><img src="./assets/img/shop/icn_pen_01.svg" alt="Monlife"> <a href="#">Blog</a>
+									</h4>
+									<h5><a href="#">Floor Bed Questions Answered</a></h5>
+									<p>The Hapa family shares tips for safety, how to respond when kids get out of bed,
+										and
+										helping your baby learn to fall asleep solo.</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="blog">
+								<div class="img">
+									<img src="./assets/img/shop/img_text_04.jpg" alt="Monlife">
+								</div>
+								<div class="title">
+									<h4><img src="./assets/img/shop/icn_facebook_01.svg" alt="Monlife"> <a
+											href="#">Facebook</a></h4>
+									<h5><a href="#">Floor Bed Questions Answered</a></h5>
+									<p>The Hapa family shares tips for safety, how to respond when kids get out of bed,
+										and
+										helping your baby learn to fall asleep solo.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="c-like-products">
+					<h3>Bạn cũng có thể thích</h3>
+					<ul>
+						<li>
+							<div class="products">
+								<div class="products__img">
+									<img src="./assets/img/common/img_pro-1.jpg" alt="Product">
+								</div>
+								<div class="products__name">
+									<a href="#">Sous-Chef Toddler Tower</a>
+								</div>
+								<div class="products__price">
+									<p>Giá từ 3.000.000 VNĐ</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="products">
+								<div class="products__img">
+									<img src="./assets/img/common/img_pro-2.jpg" alt="Product">
+								</div>
+								<div class="products__name">
+									<a href="#">Sous-Chef Toddler Tower</a>
+								</div>
+								<div class="products__price">
+									<p>Giá từ 3.000.000 VNĐ</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="products">
+								<div class="products__img">
+									<img src="./assets/img/common/img_pro-3.jpg" alt="Product">
+								</div>
+								<div class="products__name">
+									<a href="#">Sous-Chef Toddler Tower</a>
+								</div>
+								<div class="products__price">
+									<p>Giá từ 3.000.000 VNĐ</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="products">
+								<div class="products__img">
+									<img src="./assets/img/common/img_pro-4.jpg" alt="Product">
+								</div>
+								<div class="products__name">
+									<a href="#">Sous-Chef Toddler Tower</a>
+								</div>
+								<div class="products__price">
+									<p>Giá từ 3.000.000 VNĐ</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Box affiliate -->
+	<div class="c-affiliate">
+		<div class="c-affiliate__inner">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="./assets/img/index/img_box_affiliate_01.jpg" alt="Affiliate">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./assets/img/index/img_box_affiliate_02.jpg" alt="Affiliate">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- End checkout content -->
+
+	<!-- Footer -->
+	<footer class="l-footer">
+		<div class="l-footer__head">
+			<div class="l-footer__head__inner">
+				<ul>
+					<li>
+						<img src="./assets/img/common/fig_logo_01-01.svg" alt="Monlife">
+					</li>
+					<li>
+						<h3 class="f-prata">Cùng Monlife tận hưởng trọn vẹn niềm vui bên cạnh thiên thần của bạn</h3>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="l-footer__main">
+			<div class="l-footer__main__inner">
+				<div class="block">
+					<div class="block__link-1">
+						<h3 class="title f-prata">Liên hệ MonLife</h3>
+						<ul class="address">
+							<li>Hoàng Liệt - Hoàng Mai - Hà Nội</li>
+							<li>Mobile: (+84) 0907 909 209</li>
+							<li>Email: tranduyminh1@gmail.com</li>
+						</ul>
+						<ul class="share">
+							<li>
+								<a href=""><img src="./assets/img/common/icn_facebook_02.svg" alt="Facebook"></a>
+							</li>
+							<li>
+								<a href=""><img src="./assets/img/common/icn_twitter_02.svg" alt="Twitter"></a>
+							</li>
+							<li>
+								<a href=""><img src="./assets/img/common/icn_youtube_02.svg" alt="Youtube"></a>
+							</li>
+							<li>
+								<a href=""><img src="./assets/img/common/icn_instagram_02.svg" alt="Instagram"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block__link-2">
+						<h3 class="title f-prata">Subscribe</h3>
+						<p>Đăng ký ngay để cập nhật tài liệu miễn phí, những ý tưởng<br>và cảm hứng mới nhé!</p>
+						<ul>
+							<li>
+								<input type="text" placeholder="Nhập địa chỉ email của bạn">
+							</li>
+							<li>
+								<button type="button">Đăng ký</button>
+							</li>
+						</ul>
+					</div>
+					<div class="block__link-3">
+						<h3 class="title f-prata">Liên kết MonLife</h3>
+						<ul>
+							<li>
+								<a href="index.html">Trang Chủ</a>
+							</li>
+							<li>
+								<a href="ve-chung-toi.html">Về MonLife</a>
+							</li>
+							<li>
+								<a href="qui-dinh-doi-tra.html">Qui định đỗi trả</a>
+							</li>
+							<li>
+								<a href="phuong-thuc-giao-hang.html">Phương thức giao hàng</a>
+							</li>
+							<li>
+								<a href="affiliate.html">Affiliate</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="l-footer__copyright">
+			<p class="f-prata">Copyright © 2022 MonLife. all rights reserved</p>
+		</div>
+	</footer>
+	<!-- End footer -->
+
+	<!-- Goto top -->
+	<a href="#" class="scrollup" style="display: inline;"></a>
+
+	<!-- Modal QR -->
+	<div class="c-qr-code is-hidden-modal" id="c-qr-code">
+		<div class="c-qr-code__transaction"></div>
+		<div class="c-qr-code__inner">
+			<div class="block">
+				<a href="#" class="c-qr-code__inner__close"><img class="bct" src="./assets/img/common/icn_close_01.svg"
+						alt=""></a>
+				<h3>Thanh toán bằng mã qr</h3>
+				<ul>
+					<li>Số tiền cần thanh toán</li>
+					<li>23.000.000 vnđ</li>
+				</ul>
+				<div class="qrcode">
+					<img src="./assets/img/shop/9040588_qr_code_icon_01.svg" alt="QR">
+				</div>
+				<p>Thời gian chờ <span>50s</span></p>
+			</div>
+		</div>
+	</div>
+	<!-- End QR -->
+
+	<!-- Javascript -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/jquery.easing.min.js"></script>
+	<script src="./assets/js/slick.min.js"></script>
+	<script src="./assets/js/jquery.nice-select.min.js"></script>
+	<script src="./assets/js/jquery.fancybox.min.js"></script>
+	<script src="https://abouolia.github.io/sticky-sidebar/js/ResizeSensor.js"></script>
+	<script src="https://abouolia.github.io/sticky-sidebar/js/sticky-sidebar.js"></script>
+	<script src="./assets/js/jquery.index.js"></script>
+	<script src="./assets/js/jquery.shop.js"></script>
+	<script src="./assets/js/jquery.common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+.c-qr-code {
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+
+	&__transaction {
+		position: fixed;
+		z-index: 10;
+		bottom: 0%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.6);
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	}
+
+	&__inner {
+		position: absolute;
+		z-index: 9999;
+		top: 50%;
+		left: 50%;
+		width: 600px;
+		height: 500px;
+		background-color: #FFFFFF;
+		transform: translate(-50%, -50%) !important;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		border-radius: 30px;
+
+		@include br990 {
+			width: 90%;
+		}
+
+		@include br690 {
+			width: 90%;
+			height: initial;
+		}
+
+		.block {
+			padding: 50px;
+			text-align: center;
+			font-family: 'Roboto', sans-serif;
+
+			h3 {
+				@include fs(26);
+				color: #000;
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: 800;
+				margin-bottom: 30px;
+
+				@include br890 {
+					@include fs(20);
+				}
+			}
+
+			.qrcode {
+				margin-bottom: 30px;
+
+				img {
+					width: 220px;
+					height: 220px;
+
+					@include br690 {
+						width: 200px;
+						height: 200px;
+					}
+				}
+			}
+
+			ul {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 30px;
+
+				@include br690 {
+					flex-wrap: wrap;
+				}
+
+				li {
+					align-self: center;
+
+					@include br690 {
+						flex: 100%;
+					}
+				}
+
+				li:last-child {
+					@include fs(20);
+					color: #5B712E;
+					font-weight: bold;
+					margin-left: 15px;
+
+					@include br890 {
+						@include fs(16);
+					}
+
+					@include br690 {
+						flex: 100%;
+						margin-top: 20px;
+					}
+				}
+			}
+
+			p {
+				span {
+					color: red;
+					font-weight: 600;
+				}
+			}
+		}
+
+		&__close {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			z-index: 99;
+
+			&:hover {
+				opacity: 0.5;
+			}
+
+			img {
+				width: 31px;
+				height: 31px;
+			}
+		}
+	}
+}

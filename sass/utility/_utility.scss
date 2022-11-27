@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* Font names */
+
+.f-nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+.f-prata {
+    font-family: 'Prata', serif;
+}
+
+.f-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form control elements */
+
+.form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #F2F3F4;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include fs(16);
+    font-family: 'Roboto', sans-serif;
+    color: #4A4A4A;
+
+    &::-webkit-input-placeholder {
+        /* Edge */
+        color: #999999;
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #999999;
+    }
+
+    &::placeholder {
+        color: #999999;
+    }
+}
+
+.input-group {
+    display: flex;
+
+    .form-control {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .input-group-btn {
+        display: flex;
+
+        button {
+            width: 50px;
+            background-color: #5B712E;
+            border: none;
+            color: #fff;
+            border-radius: 0px 10px 10px 0px;
+            cursor: pointer;
+            @include fs(17);
+
+            &:hover {
+                background-color: #c4884a;
+            }
+        }
+    }
+}
+
+.c-btn {
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #5B712E;
+    color: #fff;
+    @include fs(17);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: #c4884a;
+        color: #fff;
+    }
+}
+
+.c-blue {
+    background-color: #1AA7D3;
+}
