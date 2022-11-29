@@ -104,6 +104,10 @@
 				align-items: center;
 				position: relative;
 
+				@include br500 {
+					position: static;
+				}
+
 				@include br1200 {
 					padding-right: 80px;
 				}
@@ -119,6 +123,10 @@
 				.search {
 					position: relative;
 
+					@include br500 {
+						position: static;
+					}
+
 					&__btn {
 						a {
 							font-weight: bold;
@@ -133,12 +141,21 @@
 						position: absolute;
 						right: 0px;
 						top: 72px;
-						width: 350px;
+						width: 330px;
 						background: #FFFFFF;
 						border: 1px solid rgba(51, 51, 51, 0.1);
 						box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
 						padding: 20px;
-						z-index: 2;
+						z-index: 3;
+
+						@include br1200 {
+							top: 65px;
+						}
+
+						@include br500 {
+							top: 79px;
+							width: 100%;
+						}
 					}
 				}
 
@@ -234,7 +251,16 @@
 						border: 1px solid rgba(51, 51, 51, 0.1);
 						box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
 						padding: 0px;
-						z-index: 2;
+						z-index: 3;
+
+						@include br1200 {
+							top: 65px;
+						}
+
+						@include br500 {
+							top: 52px;
+							right: -85px;
+						}
 					}
 				}
 
@@ -277,7 +303,17 @@
 						border: 1px solid rgba(51, 51, 51, 0.1);
 						box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
 						padding: 20px;
-						z-index: 2;
+						z-index: 3;
+
+						@include br1200 {
+							top: 65px;
+						}
+
+						@include br500 {
+							top: 52px;
+							width: 340px;
+							right: -85px;
+						}
 
 						h3 {
 							@include fs(18);
@@ -287,6 +323,10 @@
 					}
 
 					.cart__block {
+						@include br500 {
+							overflow: auto;
+							height: 430px;
+						}
 
 						&__bl {
 							display: flex;
@@ -487,7 +527,7 @@
 
 				a {
 					img {
-						width: 183px;
+						height: 60px;
 					}
 				}
 			}
@@ -499,7 +539,7 @@
 				flex-wrap: wrap;
 				align-items: center;
 				justify-content: center;
-				height: 100px;
+				height: 60px;
 
 				ul {
 					display: flex;
@@ -591,12 +631,12 @@
 							position: absolute;
 							right: 0px;
 							top: 72px;
-							width: 350px;
+							width: 330px;
 							background: #FFFFFF;
 							border: 1px solid rgba(51, 51, 51, 0.1);
 							box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
 							padding: 20px;
-							z-index: 2;
+							z-index: 3;
 						}
 					}
 
@@ -697,7 +737,7 @@
 							border: 1px solid rgba(51, 51, 51, 0.1);
 							box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
 							padding: 0px;
-							z-index: 2;
+							z-index: 3;
 						}
 					}
 
@@ -760,7 +800,7 @@
 							border: 1px solid rgba(51, 51, 51, 0.1);
 							box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
 							padding: 20px;
-							z-index: 2;
+							z-index: 3;
 
 							h3 {
 								@include fs(18);
@@ -810,6 +850,8 @@
 
 									ul {
 										li {
+											margin-left: 0px;
+
 											p {
 												font-family: 'Roboto', sans-serif;
 												@include fs(14);

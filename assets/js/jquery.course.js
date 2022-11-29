@@ -16,4 +16,22 @@ $(document).ready(function () {
         return false;
     });
 
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        $('.col-video__videos').toggleClass('video-fix',
+            //add 'ok' class when div position match or exceeds else remove the 'ok' class.
+            scroll >= $('.p-course-detail__video').offset().top
+        );
+    });
+    //trigger the scroll
+    $(window).scroll();//ensure if you're in current position when page is refreshed
+
+});
+
+$(document).ready(function () {
+
+    $('.close-video').click(function () {
+        $('.col-video__videos').removeClass('video-fix');
+    });
+
 });

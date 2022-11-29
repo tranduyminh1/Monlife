@@ -2,7 +2,7 @@
 
 .p-shop {
     &__inner {
-        max-width: 1260px;
+        max-width: 1200px;
         margin: 0 auto;
         position: relative;
         padding: 0 15px;
@@ -360,7 +360,7 @@
 
             .info {
                 flex: 1;
-                padding-left: 70px;
+                padding-left: 50px;
 
                 @include br890 {
                     flex: 100%;

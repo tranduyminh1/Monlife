@@ -9,19 +9,19 @@
 
         p {
             text-align: center;
-            @include fs(36);
+            @include fs(30);
             color: #000;
             line-height: 1.6;
             margin-top: 30px;
             font-family: 'Prata', serif;
 
             @include br1200 {
-                @include fs(22);
+                @include fs(20);
                 line-height: 1.4;
             }
 
             @include br500 {
-                @include fs(18);
+                @include fs(16);
                 line-height: 1.4;
             }
         }

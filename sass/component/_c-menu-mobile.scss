@@ -36,9 +36,13 @@
 
 					a {
 						display: block;
-						color: #5B712E;
+						color: #4A4A4A;
 						@include fs(15);
 						font-weight: 600;
+
+						&:hover {
+							color: #5B712E;
+						}
 					}
 
 					&:after {
@@ -49,6 +53,10 @@
 						right: 20px;
 						top: 0px;
 						background: no-repeat url(../../assets/img/common/icn_plus_01.svg);
+					}
+
+					.active {
+						color: #5B712E;
 					}
 				}
 			}
