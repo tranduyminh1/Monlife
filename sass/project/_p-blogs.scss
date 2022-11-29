@@ -8,7 +8,7 @@
     }
 
     &__montessori-img {
-        max-width: 1260px;
+        max-width: 1200px;
         margin: 0px auto 60px;
         position: relative;
         padding: 0 15px;
@@ -19,7 +19,7 @@
     }
 
     &__inner {
-        max-width: 1260px;
+        max-width: 1200px;
         margin: 0 auto;
         position: relative;
         padding: 0 15px;
@@ -203,6 +203,11 @@
                                     border-radius: 5px;
                                     padding: 5px 15px 5px 15px;
                                     margin: 5px;
+
+                                    &:hover {
+                                        background-color: #5B712E;
+                                        color: #fff;
+                                    }
                                 }
                             }
                         }
@@ -303,6 +308,8 @@
                     }
 
                     &__item {
+                        margin-bottom: 20px;
+
                         .img {
                             margin-bottom: 20px
                         }
@@ -310,12 +317,17 @@
                         .text {
                             h3 {
                                 a {
-                                    @include fs(36);
+                                    @include fs(22);
                                     font-weight: normal;
-                                    margin-bottom: 20px;
+                                    margin-bottom: 15px;
+                                    font-weight: 600;
 
                                     @include br500 {
                                         @include fs(30);
+                                    }
+
+                                    &:hover {
+                                        color: #5B712E;
                                     }
                                 }
                             }
@@ -328,18 +340,18 @@
                             .more {
                                 @include fs(18);
                                 text-decoration: underline;
+
+                                &:hover {
+                                    color: #5B712E;
+                                }
                             }
                         }
 
                         .c-share {
                             margin-top: 25px;
-                            border-bottom: 1px solid #ccc;
-                            margin-bottom: 25px;
-                            padding-bottom: 25px;
-
-                            &:last-child {
-                                border-bottom: none;
-                            }
+                            border-bottom: 1px solid #F6EFE5 !important;
+                            margin-bottom: 15px;
+                            padding-bottom: 15px;
                         }
                     }
                 }

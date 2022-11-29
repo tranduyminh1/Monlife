@@ -8,7 +8,7 @@
 		padding-bottom: 35px;
 
 		&__inner {
-			max-width: 1260px;
+			max-width: 1200px;
 			margin: 0 auto;
 			position: relative;
 			padding: 0 15px;
@@ -28,12 +28,12 @@
 					}
 
 					h3 {
-						@include fs(28);
+						@include fs(24);
 						color: #5B712E;
 						font-weight: normal;
 
 						@include br1200 {
-							@include fs(24);
+							@include fs(20);
 						}
 					}
 				}
@@ -66,7 +66,7 @@
 		padding-bottom: 25px;
 
 		&__inner {
-			max-width: 1260px;
+			max-width: 1200px;
 			margin: 0 auto;
 			position: relative;
 			padding: 0 15px;
@@ -126,14 +126,14 @@
 						margin-bottom: 30px;
 
 						li {
-							@include fs(18);
+							@include fs(16);
 							font-family: 'Roboto', sans-serif;
-							margin-bottom: 15px;
+							margin-bottom: 20px;
 							padding-left: 40px;
 							position: relative;
 
 							@include br1200 {
-								@include fs(16);
+								@include fs(14);
 							}
 
 							&:last-child {
@@ -217,7 +217,7 @@
 					}
 
 					p {
-						@include fs(16);
+						@include fs(14);
 						margin-bottom: 15px;
 						line-height: 1.6;
 					}
@@ -340,12 +340,12 @@
 					ul {
 						li {
 							a {
-								@include fs(18);
+								@include fs(16);
 								font-family: 'Roboto', sans-serif;
 								margin-bottom: 15px;
 
 								@include br1200 {
-									@include fs(16);
+									@include fs(14);
 								}
 
 								&:hover {
@@ -367,6 +367,7 @@
 
 		p {
 			color: #fff;
+			@include fs(14);
 
 			@include br690 {
 				@include fs(14);

@@ -12,6 +12,7 @@
     &__breadcrumbs {
         padding-top: 80px;
         padding-bottom: 80px;
+        background-size: cover !important;
 
         &__inner {
             max-width: 1260px;
@@ -476,6 +477,7 @@
     width: 420px;
     padding: 35px;
     top: -300px;
+    z-index: 2;
 
     @include br1200 {
         right: 15px;

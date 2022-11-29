@@ -196,9 +196,13 @@ $(window).load(function () {
 
 		if (scroll >= 180) {
 			$(".l-header__scroll").addClass("aaa-fixed");
+			$('.l-header__inner').addClass('is-hidden');
+			$('.l-header__nav').addClass('is-hidden');
 			$("body").addClass("aaa");
 		} else {
 			$(".l-header__scroll").removeClass("aaa-fixed");
+			$('.l-header__inner').removeClass('is-hidden');
+			$('.l-header__nav').removeClass('is-hidden');
 			$("body").removeClass("aaa");
 		}
 	});

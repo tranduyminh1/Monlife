@@ -30,7 +30,7 @@
         }
 
         &__inner {
-            max-width: 1260px;
+            max-width: 1200px;
             margin: 0 auto;
             position: relative;
             padding: 0 15px;
@@ -117,7 +117,7 @@
                 li:nth-child(2) {
                     flex: 57%;
                     width: 57%;
-                    padding-left: 105px;
+                    padding-left: 80px;
 
                     @include br1200 {
                         padding-left: 50px;
@@ -133,7 +133,7 @@
 
                     p {
                         font-family: 'Roboto', sans-serif;
-                        @include fs(20);
+                        @include fs(18);
                         color: #5B712E;
                         text-align: justify;
                         line-height: 28px;
@@ -176,7 +176,7 @@
     }
 
     &__montessori {
-        max-width: 1260px;
+        max-width: 1200px;
         margin: 0 auto;
         position: relative;
         padding: 0 15px;
@@ -302,7 +302,7 @@
         border-bottom: 1px solid #D8D8D8;
 
         &__inner {
-            max-width: 1260px;
+            max-width: 1200px;
             margin: 0 auto;
             position: relative;
             padding: 0 15px;
@@ -358,10 +358,11 @@
 
                     p {
                         font-family: 'Roboto', sans-serif;
-                        @include fs(15);
+                        @include fs(14);
                         font-weight: normal;
                         text-align: justify;
                         margin-bottom: 15px;
+                        line-height: 1.4;
                     }
 
                     a {
@@ -379,7 +380,7 @@
 
     &__video {
         &__inner {
-            max-width: 1260px;
+            max-width: 1200px;
             margin: 0 auto;
             position: relative;
             padding: 0 15px;
@@ -421,7 +422,7 @@
         }
 
         .block {
-            max-width: 1260px;
+            max-width: 1200px;
             margin: 0 auto;
             position: relative;
             padding: 0 15px;
@@ -611,7 +612,7 @@
         margin-bottom: 100px;
 
         &__inner {
-            max-width: 1260px;
+            max-width: 1200px;
             margin: 0 auto;
             position: relative;
             padding: 0 15px;
