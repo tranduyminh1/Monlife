@@ -1573,12 +1573,12 @@ textarea {
   flex: 1;
   align-self: center;
   padding-left: 50px;
-  padding-right: 200px;
+  padding-right: 50px;
 }
 @media screen and (min-width: 200px) and (max-width: 1010px) {
   .p-index__montessori__slider .block__text {
     padding-left: 30px;
-    padding-right: 80px;
+    padding-right: 40px;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 910px) {
@@ -1588,7 +1588,6 @@ textarea {
 }
 .p-index__montessori__slider .block__text h3 {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -1609,8 +1608,8 @@ textarea {
 }
 .p-index__montessori__slider .block__text h3 span {
   font-weight: 800;
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 28px;
+  font-size: 1.75rem;
   text-transform: uppercase;
   padding-top: 10px;
   padding-left: 15px;
@@ -1636,16 +1635,17 @@ textarea {
   }
 }
 .p-index__montessori__slider .block__text p {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
+  padding-right: 100px;
 }
 @media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-index__montessori__slider .block__text p {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }
 .p-index__montessori__slider .block__text .c-btn {
@@ -1823,8 +1823,8 @@ textarea {
 }
 .p-index__course .block__width h3 span {
   font-weight: 800;
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 28px;
+  font-size: 1.75rem;
   text-transform: uppercase;
   padding-top: 10px;
   padding-left: 15px;
@@ -1832,13 +1832,13 @@ textarea {
 }
 @media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-index__course .block__width h3 span {
-    font-size: 26px;
-    font-size: 1.625rem;
+    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 .p-index__course .block__width p {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
   color: #fff;
@@ -1847,8 +1847,8 @@ textarea {
 }
 @media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-index__course .block__width p {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 15px;
+    font-size: 0.9375rem;
     margin-bottom: 20px;
   }
 }
@@ -1860,8 +1860,8 @@ textarea {
   width: 390px;
   background-color: #fff;
   border-radius: 10px;
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   color: #5B712E;
 }
@@ -2019,8 +2019,8 @@ textarea {
 }
 .p-index__document__inner .block__text h3 span {
   font-weight: 800;
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 28px;
+  font-size: 1.75rem;
   text-transform: uppercase;
   padding-top: 10px;
   padding-left: 15px;
@@ -2028,13 +2028,13 @@ textarea {
 }
 @media screen and (min-width: 200px) and (max-width: 910px) {
   .p-index__document__inner .block__text h3 span {
-    font-size: 26px;
-    font-size: 1.625rem;
+    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 .p-index__document__inner .block__text p {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
   color: #fff;
@@ -2042,8 +2042,8 @@ textarea {
 }
 @media screen and (min-width: 200px) and (max-width: 910px) {
   .p-index__document__inner .block__text p {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }
 .p-index__document__inner .block__text a {

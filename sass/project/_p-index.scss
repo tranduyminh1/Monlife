@@ -213,11 +213,11 @@
                     flex: 1;
                     align-self: center;
                     padding-left: 50px;
-                    padding-right: 200px;
+                    padding-right: 50px;
 
                     @include br990 {
                         padding-left: 30px;
-                        padding-right: 80px;
+                        padding-right: 40px;
                     }
 
                     @include br890 {
@@ -226,7 +226,6 @@
 
                     h3 {
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         margin-bottom: 20px;
 
@@ -246,7 +245,7 @@
 
                         span {
                             font-weight: 800;
-                            @include fs(32);
+                            @include fs(28);
                             text-transform: uppercase;
                             padding-top: 10px;
                             padding-left: 15px;
@@ -268,13 +267,14 @@
                     }
 
                     p {
-                        @include fs(18);
+                        @include fs(16);
                         line-height: 1.6;
                         font-family: 'Roboto', sans-serif;
                         margin-bottom: 20px;
+                        padding-right: 100px;
 
                         @include br1200 {
-                            @include fs(16);
+                            @include fs(15);
                         }
                     }
 
@@ -473,20 +473,20 @@
 
                     span {
                         font-weight: 800;
-                        @include fs(32);
+                        @include fs(28);
                         text-transform: uppercase;
                         padding-top: 10px;
                         padding-left: 15px;
                         color: #fff;
 
                         @include br1200 {
-                            @include fs(26);
+                            @include fs(22);
                         }
                     }
                 }
 
                 p {
-                    @include fs(20);
+                    @include fs(16);
                     line-height: 1.6;
                     font-family: 'Roboto', sans-serif;
                     color: #fff;
@@ -494,7 +494,7 @@
                     margin-bottom: 40px;
 
                     @include br1200 {
-                        @include fs(16);
+                        @include fs(15);
                         margin-bottom: 20px;
                     }
                 }
@@ -507,7 +507,7 @@
                     width: 390px;
                     background-color: #fff;
                     border-radius: 10px;
-                    @include fs(22);
+                    @include fs(20);
                     font-weight: 500;
                     color: #5B712E;
 
@@ -675,27 +675,27 @@
 
                         span {
                             font-weight: 800;
-                            @include fs(32);
+                            @include fs(28);
                             text-transform: uppercase;
                             padding-top: 10px;
                             padding-left: 15px;
                             color: #fff;
 
                             @include br890 {
-                                @include fs(26);
+                                @include fs(22);
                             }
                         }
                     }
 
                     p {
-                        @include fs(18);
+                        @include fs(16);
                         line-height: 1.6;
                         font-family: 'Roboto', sans-serif;
                         color: #fff;
                         margin-bottom: 20px;
 
                         @include br890 {
-                            @include fs(16);
+                            @include fs(15);
                         }
                     }
 
