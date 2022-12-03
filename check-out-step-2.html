@@ -27,9 +27,50 @@
 	<!-- Menu mobile -->
 	<section class="c-menu-mobile">
 		<div class="c-menu-mobile__inner">
-			<div class="c-menu-mobile__search">
-				<input type="text" placeholder="Nhập nội dung cần tìm...">
-				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			<div class="group-search-user">
+				<div class="c-menu-mobile__search">
+					<input type="text" placeholder="Nhập nội dung cần tìm...">
+					<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+				</div>
+				<div class="mobile-user">
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="c-menu-mobile__inner__navigation">
 				<ul class="navigation">
@@ -406,13 +447,13 @@
 	<!-- Checkout content -->
 	<div class="c-breadcrumb" style="background: no-repeat url(./assets/img/common/img_breabcrumb_01.jpg);">
 		<div class="c-breadcrumb__inner">
-			<h2>Thanh toán</h2>
+			<h2>Thanh toán</h2>
 			<ul>
 				<li>
 					<a href="#">Trang chủ</a>
 				</li>
 				<li>
-					<p>Sản phẩm</p>
+					<p>Sản phẩm</p>
 				</li>
 			</ul>
 		</div>
@@ -421,20 +462,20 @@
 		<div class="p-checkout__inner">
 			<div class="row">
 				<div class="row__col row__col-1">
-					<h3>Thông tin người đặt hàng</h3>
+					<h3>Thông tin người đặt hàng</h3>
 					<div class="info-order">
 						<ul>
 							<li>
-								<span>Số điện thoại</span>
+								<span>Số điện thoại</span>
 								<span>0907909209</span>
 							</li>
 							<li>
-								<span>Địa chỉ</span>
-								<span>1135/24 Huỳnh Tấn Phát, Quận 7</span>
+								<span>Địa chỉ</span>
+								<span>1135/41 Huỳnh Tấn Phát, Quận 7</span>
 							</li>
 						</ul>
 					</div>
-					<h3>Thông tin vận chuyển</h3>
+					<h3>Thông tin vận chuyển</h3>
 					<div class="info-s">
 						<div class="block">
 							<div class="block__title">
@@ -449,7 +490,7 @@
 						</div>
 						<div class="block">
 							<div class="block__title">
-								<span>Giao hàng tiết kiệm</span>
+								<span>Giao hàng tiết kiệm</span>
 							</div>
 							<div class="block__radio">
 								<label class="c-radio">
@@ -459,11 +500,11 @@
 							</div>
 						</div>
 					</div>
-					<h3>Thông tin thanh toán</h3>
+					<h3>Thông tin thanh toán</h3>
 					<div class="info-s">
 						<div class="block">
 							<div class="block__title">
-								<span>Thanh toán sau khi nhận hàng (COD)</span>
+								<span>Thanh toán sau khi nhận hàng (COD)</span>
 							</div>
 							<div class="block__radio">
 								<label class="c-radio">
@@ -477,10 +518,10 @@
 						<div class="form__btn">
 							<ul>
 								<li>
-									<a class="back" href="check-out-step-1.html">Quay lại trang thông tin</a>
+									<a class="back" href="check-out-step-1.html">Quay lại trang thông tin</a>
 								</li>
 								<li>
-									<a href="thanks.html" class="c-btn">Đặt hàng</a>
+									<a href="thanks.html" class="c-btn">Đặt hàng</a>
 								</li>
 							</ul>
 						</div>
@@ -527,17 +568,17 @@
 					</div>
 					<div class="coupon">
 						<label class="f-roboto">Mã giảm giá</label>
-						<input type="text" class="form-control" placeholder="Nhập mã giả giá">
+						<input type="text" class="form-control" placeholder="Nhập mã giảm giá">
 						<button type="button">Áp dụng</button>
 					</div>
 					<div class="amount">
 						<ul>
 							<li>
-								<span class="f-roboto">Giá tiền</span>
+								<span class="f-roboto">Giá tiền</span>
 								<span class="f-roboto">12.000.000 VNĐ</span>
 							</li>
 							<li>
-								<span class="f-roboto">Phí vận chuyển</span>
+								<span class="f-roboto">Phí vận chuyển</span>
 								<span class="f-roboto">0 VNĐ</span>
 							</li>
 							<li>
@@ -549,7 +590,7 @@
 					<div class="total">
 						<ul>
 							<li>
-								<span class="f-roboto">Tổng tiền thanh toán</span>
+								<span class="f-roboto">Tổng tiền thanh toán</span>
 								<span class="f-roboto">12.000.000 VNĐ</span>
 							</li>
 						</ul>
@@ -615,7 +656,7 @@
 						<h3 class="title f-prata">Liên kết MonLife</h3>
 						<ul>
 							<li>
-								<a href="index.html">Trang Chủ</a>
+								<a href="index.html">Trang chủ</a>
 							</li>
 							<li>
 								<a href="ve-chung-toi.html">Về MonLife</a>

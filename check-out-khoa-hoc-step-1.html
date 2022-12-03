@@ -27,9 +27,50 @@
 	<!-- Menu mobile -->
 	<section class="c-menu-mobile">
 		<div class="c-menu-mobile__inner">
-			<div class="c-menu-mobile__search">
-				<input type="text" placeholder="Nhập nội dung cần tìm...">
-				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			<div class="group-search-user">
+				<div class="c-menu-mobile__search">
+					<input type="text" placeholder="Nhập nội dung cần tìm...">
+					<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+				</div>
+				<div class="mobile-user">
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="c-menu-mobile__inner__navigation">
 				<ul class="navigation">
@@ -406,7 +447,7 @@
 	<!-- Checkout content -->
 	<div class="c-breadcrumb" style="background: no-repeat url(./assets/img/common/img_breabcrumb_01.jpg);">
 		<div class="c-breadcrumb__inner">
-			<h2>Thanh toán</h2>
+			<h2>Thanh toán</h2>
 			<ul>
 				<li>
 					<a href="#">Trang chủ</a>
@@ -428,38 +469,38 @@
 								<img src="./assets/img/common/icn_avatar_01.svg" alt="Avatar">
 							</li>
 							<li>
-								<p class="f-roboto">Trần Duy Minh (tranduyminh1@gmail.com)</p>
+								<p class="f-roboto">Trần Duy Minh (tranduyminh1@gmail.com)</p>
 							</li>
 						</ul>
 					</div>
 					<div class="newsletter">
-						<label class="c-checkbox">Nhận email ửu đãi, và tin tức mới nhất
+						<label class="c-checkbox">Nhận email ưu đãi, và tin tức mới nhất
 							<input type="checkbox">
 							<span class="checkmark"></span>
 						</label>
 					</div>
 					<div class="form">
 						<div class="form__field">
-							<label>Họ và tên</label>
-							<input type="text" class="form-control" placeholder="Họ và tên" value="Trần Duy Minh">
+							<label>Họ và tên</label>
+							<input type="text" class="form-control" placeholder="Họ và tên" value="Trần Duy Minh">
 						</div>
 						<div class="form__field">
 							<label>Email</label>
 							<input type="text" class="form-control" placeholder="Email" value="tranduyminh1@gmail.com">
 						</div>
 						<div class="form__field">
-							<label>Địa chỉ</label>
-							<input type="text" class="form-control" placeholder="Địa chỉ"
+							<label>Địa chỉ</label>
+							<input type="text" class="form-control" placeholder="Địa chỉ"
 								value="1135/41/24 Huỳnh Tấn Phát, P Phú Thuận, Quận 7">
 						</div>
 						<div class="form__field">
-							<label>Số điện thoại</label>
+							<label>Số điện thoại</label>
 							<input type="text" class="form-control" placeholder="Email" value="0907909209">
 						</div>
 						<div class="form__btn">
 							<ul>
 								<li>
-									<a href="check-out-step-2.html" class="c-btn">Xác nhận</a>
+									<a href="check-out-step-2.html" class="c-btn">Xác nhận</a>
 								</li>
 							</ul>
 						</div>
@@ -472,7 +513,7 @@
 								<img src="./assets/img/index/img_checkout_product_1.jpg" alt="Products">
 							</div>
 							<div class="text">
-								<h3><a class="f-roboto" href="#">Đưa Mon về nhà: 0 - 2,5 tuổi</a></h3>
+								<h3><a class="f-roboto" href="#">Đưa Mon về nhà 0 - 2,5 tuổi</a></h3>
 								<p class="price">6.000.000 VNĐ</p>
 							</div>
 						</div>
@@ -485,7 +526,7 @@
 					<div class="amount">
 						<ul>
 							<li>
-								<span class="f-roboto">Giá tiền</span>
+								<span class="f-roboto">Giá tiền</span>
 								<span class="f-roboto">12.000.000 VNĐ</span>
 							</li>
 						</ul>
@@ -493,7 +534,7 @@
 					<div class="total">
 						<ul>
 							<li>
-								<span class="f-roboto">Tổng tiền thanh toán</span>
+								<span class="f-roboto">Tổng tiền thanh toán</span>
 								<span class="f-roboto">12.000.000 VNĐ</span>
 							</li>
 						</ul>
@@ -559,7 +600,7 @@
 						<h3 class="title f-prata">Liên kết MonLife</h3>
 						<ul>
 							<li>
-								<a href="index.html">Trang Chủ</a>
+								<a href="index.html">Trang chủ</a>
 							</li>
 							<li>
 								<a href="ve-chung-toi.html">Về MonLife</a>

@@ -57,9 +57,50 @@
 	<!-- Menu mobile -->
 	<section class="c-menu-mobile">
 		<div class="c-menu-mobile__inner">
-			<div class="c-menu-mobile__search">
-				<input type="text" placeholder="Nhập nội dung cần tìm...">
-				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			<div class="group-search-user">
+				<div class="c-menu-mobile__search">
+					<input type="text" placeholder="Nhập nội dung cần tìm...">
+					<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+				</div>
+				<div class="mobile-user">
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="c-menu-mobile__inner__navigation">
 				<ul class="navigation">
@@ -440,30 +481,50 @@
 			<div class="column small-11 small-centered">
 				<div class="cSlider1 cSlider--single1">
 					<div class="cSlider__item1">
+						<div class="cSlider__item1__sale">
+							<h4>Tặng quà tăng trưởng</h4>
+							<a href="#">KHÁM PHÁ ƯU ĐÃI NGÀY LỄ</a>
+						</div>
 						<img class="pc" src="./assets/img/slider/bg-1.jpg" alt="Slider">
 						<img class="ipad" src="./assets/img/slider/bg-1a.jpg" alt="Slider">
 						<img class="sp1" src="./assets/img/slider/bg-1b.jpg" alt="Slider">
 						<img class="sp2" src="./assets/img/slider/bg-1c.jpg" alt="Slider">
 					</div>
 					<div class="cSlider__item1">
+						<div class="cSlider__item1__sale">
+							<h4>Tặng quà tăng trưởng</h4>
+							<a href="#">KHÁM PHÁ ƯU ĐÃI NGÀY LỄ</a>
+						</div>
 						<img class="pc" src="./assets/img/slider/bg-2.jpg" alt="Slider">
 						<img class="ipad" src="./assets/img/slider/bg-2a.jpg" alt="Slider">
 						<img class="sp1" src="./assets/img/slider/bg-2b.jpg" alt="Slider">
 						<img class="sp2" src="./assets/img/slider/bg-2c.jpg" alt="Slider">
 					</div>
 					<div class="cSlider__item1">
+						<div class="cSlider__item1__sale">
+							<h4>Tặng quà tăng trưởng</h4>
+							<a href="#">KHÁM PHÁ ƯU ĐÃI NGÀY LỄ</a>
+						</div>
 						<img class="pc" src="./assets/img/slider/bg-3.jpg" alt="Slider">
 						<img class="ipad" src="./assets/img/slider/bg-3a.jpg" alt="Slider">
 						<img class="sp1" src="./assets/img/slider/bg-3b.jpg" alt="Slider">
 						<img class="sp2" src="./assets/img/slider/bg-3c.jpg" alt="Slider">
 					</div>
 					<div class="cSlider__item1">
+						<div class="cSlider__item1__sale">
+							<h4>Tặng quà tăng trưởng</h4>
+							<a href="#">KHÁM PHÁ ƯU ĐÃI NGÀY LỄ</a>
+						</div>
 						<img class="pc" src="./assets/img/slider/bg-1.jpg" alt="Slider">
 						<img class="ipad" src="./assets/img/slider/bg-1a.jpg" alt="Slider">
 						<img class="sp1" src="./assets/img/slider/bg-1b.jpg" alt="Slider">
 						<img class="sp2" src="./assets/img/slider/bg-1c.jpg" alt="Slider">
 					</div>
 					<div class="cSlider__item1">
+						<div class="cSlider__item1__sale">
+							<h4>Tặng quà tăng trưởng</h4>
+							<a href="#">KHÁM PHÁ ƯU ĐÃI NGÀY LỄ</a>
+						</div>
 						<img class="pc" src="./assets/img/slider/bg-2.jpg" alt="Slider">
 						<img class="ipad" src="./assets/img/slider/bg-2a.jpg" alt="Slider">
 						<img class="sp1" src="./assets/img/slider/bg-2b.jpg" alt="Slider">
@@ -532,12 +593,9 @@
 						<h3 class="f-prata">Monlife - Hơi thở Montessori</h3>
 					</li>
 					<li>
-						<p>Nơi bạn hiểu rằng Motessori không chỉ đơn thuần là một phương pháp
-							giáo dục sớm như mọi người
-							vẫn hiểu. Đó chính là cách chúng ta thấu hiểu một đứa trẻ, thấu hiểu
-							chính mình, là một
-							phong cách sống đầy tính nuôi dưỡng cho con bạn, cho bạn và để tình
-							yêu thương ngập tràn
+						<p>Nơi bạn hiểu rằng Motessori không chỉ đơn thuần là một phương pháp giáo dục sớm như mọi người
+							vẫn hiểu. Đó chính là cách chúng ta thấu hiểu một đứa trẻ, thấu hiểu chính mình, là một
+							phong cách sống đầy tính nuôi dưỡng cho con bạn, cho bạn và để tình yêu thương ngập tràn
 							trong hành trình lớn lên của đứa trẻ</p>
 					</li>
 				</ul>
@@ -565,14 +623,11 @@
 									<img src="./assets/img/common/icn_eating-cooking_01.svg" alt="Image">
 									<span>Nền tảng triết lý</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#" class="c-btn">Khám Phá Thêm</a>
 							</div>
@@ -591,14 +646,11 @@
 									<img src="./assets/img/common/icn_eating-cooking_01.svg" alt="Image">
 									<span>Nền tảng triết lý</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#" class="c-btn">Khám Phá Thêm</a>
 							</div>
@@ -617,14 +669,11 @@
 									<img src="./assets/img/common/icn_eating-cooking_01.svg" alt="Image">
 									<span>Nền tảng triết lý</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#" class="c-btn">Khám Phá Thêm</a>
 							</div>
@@ -643,14 +692,11 @@
 									<img src="./assets/img/common/icn_eating-cooking_01.svg" alt="Image">
 									<span>Nền tảng triết lý</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#" class="c-btn">Khám Phá Thêm</a>
 							</div>
@@ -669,14 +715,11 @@
 									<img src="./assets/img/common/icn_eating-cooking_01.svg" alt="Image">
 									<span>Nền tảng triết lý</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#" class="c-btn">Khám Phá Thêm</a>
 							</div>
@@ -695,8 +738,7 @@
 						</div>
 						<div class="post__text">
 							<h3>Ăn uống</h3>
-							<p>Một quán cà phê ấm cúng và quyến rũ đang chờ đón khách phục vụ
-								các món ăn địa phương và
+							<p>Một quán cà phê ấm cúng và quyến rũ đang chờ đón khách phục vụ các món ăn địa phương và
 								thủ công chất lượng.</p>
 							<a href="#">Xem thêm...</a>
 						</div>
@@ -707,8 +749,7 @@
 						</div>
 						<div class="post__text">
 							<h3>Hành Trình</h3>
-							<p>Một quán cà phê ấm cúng và quyến rũ đang chờ đón khách phục vụ
-								các món ăn địa phương và
+							<p>Một quán cà phê ấm cúng và quyến rũ đang chờ đón khách phục vụ các món ăn địa phương và
 								thủ công chất lượng.</p>
 							<a href="#">Xem thêm...</a>
 						</div>
@@ -719,8 +760,7 @@
 						</div>
 						<div class="post__text">
 							<h3>Cửa Hàng</h3>
-							<p>Một quán cà phê ấm cúng và quyến rũ đang chờ đón khách phục vụ
-								các món ăn địa phương và
+							<p>Một quán cà phê ấm cúng và quyến rũ đang chờ đón khách phục vụ các món ăn địa phương và
 								thủ công chất lượng.</p>
 							<a href="#">Xem thêm...</a>
 						</div>
@@ -731,8 +771,7 @@
 						</div>
 						<div class="post__text">
 							<h3>Ăn uống</h3>
-							<p>Một quán cà phê ấm cúng và quyến rũ đang chờ đón khách phục vụ
-								các món ăn địa phương và
+							<p>Một quán cà phê ấm cúng và quyến rũ đang chờ đón khách phục vụ các món ăn địa phương và
 								thủ công chất lượng.</p>
 							<a href="#">Xem thêm...</a>
 						</div>
@@ -772,16 +811,13 @@
 						<div class="block__width">
 							<h3>
 								<img src="./assets/img/common/icn_e-learning_evaluate_01.svg" alt="Image">
-								<span>Đưa Mon về nhà: 0 - 2,5 tuổi</span>
+								<span>Đưa Mon về nhà 0 - 2,5 tuổi</span>
 							</h3>
-							<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ
-								cần thời gian để
+							<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 								thực
-								hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta
-								có thể mời trẻ trau
+								hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 								dồi
-								các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc
-								đẩy ý thức độc lập của
+								các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 								chúng thông qua việc tự chăm sóc bản thân.</p>
 							<a href="#">Khám phá chi tiết khóa học</a>
 						</div>
@@ -798,16 +834,13 @@
 						<div class="block__width">
 							<h3>
 								<img src="./assets/img/common/icn_e-learning_evaluate_01.svg" alt="Image">
-								<span>Đưa Mon về nhà: 2.5 - 6 tuổi</span>
+								<span>Đưa Mon về nhà 2.5 - 6 tuổi</span>
 							</h3>
-							<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ
-								cần thời gian để
+							<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 								thực
-								hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta
-								có thể mời trẻ trau
+								hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 								dồi
-								các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc
-								đẩy ý thức độc lập của
+								các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 								chúng thông qua việc tự chăm sóc bản thân.</p>
 							<a href="#">Khám phá chi tiết khóa học</a>
 						</div>
@@ -824,16 +857,13 @@
 						<div class="block__width">
 							<h3>
 								<img src="./assets/img/common/icn_e-learning_evaluate_01.svg" alt="Image">
-								<span>Đưa Mon về nhà: 0 - 2,5 tuổi</span>
+								<span>Đưa Mon về nhà 0 - 2,5 tuổi</span>
 							</h3>
-							<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ
-								cần thời gian để
+							<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 								thực
-								hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta
-								có thể mời trẻ trau
+								hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 								dồi
-								các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc
-								đẩy ý thức độc lập của
+								các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 								chúng thông qua việc tự chăm sóc bản thân.</p>
 							<a href="#">Khám phá chi tiết khóa học</a>
 						</div>
@@ -850,16 +880,13 @@
 						<div class="block__width">
 							<h3>
 								<img src="./assets/img/common/icn_e-learning_evaluate_01.svg" alt="Image">
-								<span>Đưa Mon về nhà: 2.5 - 6 tuổi</span>
+								<span>Đưa Mon về nhà 2.5 - 6 tuổi</span>
 							</h3>
-							<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ
-								cần thời gian để
+							<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 								thực
-								hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta
-								có thể mời trẻ trau
+								hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 								dồi
-								các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc
-								đẩy ý thức độc lập của
+								các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 								chúng thông qua việc tự chăm sóc bản thân.</p>
 							<a href="#">Khám phá chi tiết khóa học</a>
 						</div>
@@ -876,16 +903,13 @@
 						<div class="block__width">
 							<h3>
 								<img src="./assets/img/common/icn_e-learning_evaluate_01.svg" alt="Image">
-								<span>Đưa Mon về nhà: 0 - 2,5 tuổi</span>
+								<span>Đưa Mon về nhà 0 - 2,5 tuổi</span>
 							</h3>
-							<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ
-								cần thời gian để
+							<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 								thực
-								hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta
-								có thể mời trẻ trau
+								hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 								dồi
-								các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc
-								đẩy ý thức độc lập của
+								các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 								chúng thông qua việc tự chăm sóc bản thân.</p>
 							<a href="#">Khám phá chi tiết khóa học</a>
 						</div>
@@ -918,14 +942,11 @@
 									<img src="./assets/img/common/icn_eating-cooking_01.svg" alt="Image">
 									<span>Mua hàng giúp bạn</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#" class="c-btn">Xem chi tiết</a>
 							</div>
@@ -944,14 +965,11 @@
 									<img src="./assets/img/common/icn_eating-cooking_01.svg" alt="Image">
 									<span>Mua hàng giúp bạn</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#" class="c-btn">Xem chi tiết</a>
 							</div>
@@ -970,14 +988,11 @@
 									<img src="./assets/img/common/icn_eating-cooking_01.svg" alt="Image">
 									<span>Mua hàng giúp bạn</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#" class="c-btn">Xem chi tiết</a>
 							</div>
@@ -996,14 +1011,11 @@
 									<img src="./assets/img/common/icn_eating-cooking_01.svg" alt="Image">
 									<span>Mua hàng giúp bạn</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#" class="c-btn">Xem chi tiết</a>
 							</div>
@@ -1022,14 +1034,11 @@
 									<img src="./assets/img/common/icn_eating-cooking_01.svg" alt="Image">
 									<span>Mua hàng giúp bạn</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#" class="c-btn">Xem chi tiết</a>
 							</div>
@@ -1131,14 +1140,11 @@
 									<img src="./assets/img/common/icn_note_icon_01.svg" alt="Image">
 									<span>Nền tảng triết lý</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#">
 									<img src="./assets/img/common/icn_note_icon_01.svg" alt="Image">
@@ -1161,14 +1167,11 @@
 									<img src="./assets/img/common/icn_note_icon_01.svg" alt="Image">
 									<span>Nền tảng triết lý</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#">
 									<img src="./assets/img/common/icn_note_icon_01.svg" alt="Image">
@@ -1191,14 +1194,11 @@
 									<img src="./assets/img/common/icn_note_icon_01.svg" alt="Image">
 									<span>Nền tảng triết lý</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#">
 									<img src="./assets/img/common/icn_note_icon_01.svg" alt="Image">
@@ -1221,14 +1221,11 @@
 									<img src="./assets/img/common/icn_note_icon_01.svg" alt="Image">
 									<span>Nền tảng triết lý</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#">
 									<img src="./assets/img/common/icn_note_icon_01.svg" alt="Image">
@@ -1251,14 +1248,11 @@
 									<img src="./assets/img/common/icn_note_icon_01.svg" alt="Image">
 									<span>Nền tảng triết lý</span>
 								</h3>
-								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình,
-									trẻ cần thời gian để
+								<p>Để trẻ có thể giải quyết vấn đề và đánh giá nhu cầu của mình, trẻ cần thời gian để
 									thực
-									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng
-									ta có thể mời trẻ trau
+									hành và các tài liệu có thể cần trong tầm với của trẻ. Chúng ta có thể mời trẻ trau
 									dồi
-									các kỹ năng phối hợp thể chất và ra quyết định đồng thời
-									thúc đẩy ý thức độc lập của
+									các kỹ năng phối hợp thể chất và ra quyết định đồng thời thúc đẩy ý thức độc lập của
 									chúng thông qua việc tự chăm sóc bản thân.</p>
 								<a href="#">
 									<img src="./assets/img/common/icn_note_icon_01.svg" alt="Image">
@@ -1286,8 +1280,7 @@
 						<img src="./assets/img/common/fig_logo_01-01.svg" alt="Monlife">
 					</li>
 					<li>
-						<h3 class="f-prata">Cùng Monlife tận hưởng trọn vẹn niềm vui bên cạnh
-							thiên thần của bạn</h3>
+						<h3 class="f-prata">Cùng Monlife tận hưởng trọn vẹn niềm vui bên cạnh thiên thần của bạn</h3>
 					</li>
 				</ul>
 			</div>
@@ -1319,8 +1312,7 @@
 					</div>
 					<div class="block__link-2">
 						<h3 class="title f-prata">Subscribe</h3>
-						<p>Đăng ký ngay để cập nhật tài liệu miễn phí, những ý tưởng<br>và cảm
-							hứng mới nhé!</p>
+						<p>Đăng ký ngay để cập nhật tài liệu miễn phí, những ý tưởng<br>và cảm hứng mới nhé!</p>
 						<ul>
 							<li>
 								<input type="text" placeholder="Nhập địa chỉ email của bạn">
@@ -1334,7 +1326,7 @@
 						<h3 class="title f-prata">Liên kết MonLife</h3>
 						<ul>
 							<li>
-								<a href="index.html">Trang Chủ</a>
+								<a href="index.html">Trang chủ</a>
 							</li>
 							<li>
 								<a href="ve-chung-toi.html">Về MonLife</a>

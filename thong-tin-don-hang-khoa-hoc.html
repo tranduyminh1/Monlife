@@ -27,9 +27,50 @@
 	<!-- Menu mobile -->
 	<section class="c-menu-mobile">
 		<div class="c-menu-mobile__inner">
-			<div class="c-menu-mobile__search">
-				<input type="text" placeholder="Nhập nội dung cần tìm...">
-				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			<div class="group-search-user">
+				<div class="c-menu-mobile__search">
+					<input type="text" placeholder="Nhập nội dung cần tìm...">
+					<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+				</div>
+				<div class="mobile-user">
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="c-menu-mobile__inner__navigation">
 				<ul class="navigation">
@@ -424,10 +465,10 @@
 					<div class="box__nav__pc">
 						<ul>
 							<li>
-								<a href="thong-tin-tai-khoan.html">Thông tin tài khoản</a>
+								<a href="thong-tin-tai-khoan.html">Thông tin tài khoản</a>
 							</li>
 							<li>
-								<a href="thong-tin-don-hang.html">Thông tin đơn hàng</a>
+								<a href="thong-tin-don-hang.html">Thông tin đơn hàng</a>
 							</li>
 							<li>
 								<a class="active" href="thong-tin-don-hang-khoa-hoc.html">Thông tin đơn khóa học</a>
@@ -450,14 +491,14 @@
 						<div class="order-list-course__head">
 							<ul>
 								<li>Tên khóa học</li>
-								<li>Giá tiền</li>
-								<li>Xóa</li>
+								<li>Giá tiền</li>
+								<li>Xóa</li>
 							</ul>
 						</div>
 						<div class="order-list-course__block">
 							<div class="order-list-course__block__bl">
 								<div class="name">
-									<a href="#">Đưa Mon về nhà: 0 - 2,5 tuổi</a>
+									<a href="#">Đưa Mon về nhà 0 - 2,5 tuổi</a>
 								</div>
 								<div class="price">
 									<p>6.000.000 VNĐ</p>
@@ -468,7 +509,7 @@
 							</div>
 							<div class="order-list-course__block__bl">
 								<div class="name">
-									<a href="#">Wooden Climbing Triangle</a>
+									<a href="#">Đưa Mon về nhà 2,5 - 6 tuổi</a>
 								</div>
 								<div class="price">
 									<p>6.000.000 VNĐ</p>
@@ -511,7 +552,7 @@
 	<!-- End checkout content -->
 
 	<!-- Footer -->
-	<footer class=" l-footer">
+	<footer class="l-footer">
 		<div class="l-footer__head">
 			<div class="l-footer__head__inner">
 				<ul>
@@ -519,8 +560,7 @@
 						<img src="./assets/img/common/fig_logo_01-01.svg" alt="Monlife">
 					</li>
 					<li>
-						<h3 class="f-prata">Cùng Monlife tận hưởng trọn vẹn niềm vui bên cạnh thiên thần của
-							bạn</h3>
+						<h3 class="f-prata">Cùng Monlife tận hưởng trọn vẹn niềm vui bên cạnh thiên thần của bạn</h3>
 					</li>
 				</ul>
 			</div>
@@ -552,8 +592,7 @@
 					</div>
 					<div class="block__link-2">
 						<h3 class="title f-prata">Subscribe</h3>
-						<p>Đăng ký ngay để cập nhật tài liệu miễn phí, những ý tưởng<br>và cảm hứng mới nhé!
-						</p>
+						<p>Đăng ký ngay để cập nhật tài liệu miễn phí, những ý tưởng<br>và cảm hứng mới nhé!</p>
 						<ul>
 							<li>
 								<input type="text" placeholder="Nhập địa chỉ email của bạn">
@@ -567,7 +606,7 @@
 						<h3 class="title f-prata">Liên kết MonLife</h3>
 						<ul>
 							<li>
-								<a href="index.html">Trang Chủ</a>
+								<a href="index.html">Trang chủ</a>
 							</li>
 							<li>
 								<a href="ve-chung-toi.html">Về MonLife</a>

@@ -27,9 +27,50 @@
 	<!-- Menu mobile -->
 	<section class="c-menu-mobile">
 		<div class="c-menu-mobile__inner">
-			<div class="c-menu-mobile__search">
-				<input type="text" placeholder="Nhập nội dung cần tìm...">
-				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			<div class="group-search-user">
+				<div class="c-menu-mobile__search">
+					<input type="text" placeholder="Nhập nội dung cần tìm...">
+					<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+				</div>
+				<div class="mobile-user">
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="c-menu-mobile__inner__navigation">
 				<ul class="navigation">
@@ -406,13 +447,13 @@
 	<!-- Checkout content -->
 	<div class="c-breadcrumb" style="background: no-repeat url(./assets/img/common/img_breabcrumb_01.jpg);">
 		<div class="c-breadcrumb__inner">
-			<h2>Đăng nhập</h2>
+			<h2>Đặng nhập</h2>
 			<ul>
 				<li>
 					<a href="#">Trang chủ</a>
 				</li>
 				<li>
-					<p>Đăng nhập</p>
+					<p>Đặng nhập</p>
 				</li>
 			</ul>
 		</div>
@@ -423,17 +464,20 @@
 				<h3>THÔNG TIN ĐĂNG NHẬP</h3>
 				<div class="box__form">
 					<label>Email <span class="red">*</span></label>
-					<p><span class="red">*</span> Phần bắt buộc</p>
-					<input type="email" class="form-control" placeholder="Nhập email của bạn">
+					<p><span class="red">*</span>Phần bắt buộc</p>
+					<input type="email" class="form-control" placeholder="Nhập email của bạn">
 				</div>
 				<div class="box__form">
-					<label>Mật khẩu <span class="red">*</span></label>
+					<label>Mật khẩu <span class="red">*</span></label>
 					<input type="password" id="password-field1" class="form-control password-btn"
-						placeholder="Nhập mật khẩu của bạn">
+						placeholder="Nhập mật khẩu của bạn">
 					<span toggle="#password-field1" class="toggle-password">
 						<img class="bct" src="./assets/img/common/icn_eyes_01.svg" alt="">
 						<img class="bct" src="./assets/img/common/icn_eyes_02.svg" alt="">
 					</span>
+				</div>
+				<div class="forgot-password">
+					<a href="quen-mat-khau.html">Quên mật khẩu</a>
 				</div>
 				<div class="box__form">
 					<button type="button" class="c-btn">Đăng nhập</button>
@@ -444,7 +488,7 @@
 	<!-- End checkout content -->
 
 	<!-- Footer -->
-	<footer class=" l-footer">
+	<footer class="l-footer">
 		<div class="l-footer__head">
 			<div class="l-footer__head__inner">
 				<ul>
@@ -452,8 +496,7 @@
 						<img src="./assets/img/common/fig_logo_01-01.svg" alt="Monlife">
 					</li>
 					<li>
-						<h3 class="f-prata">Cùng Monlife tận hưởng trọn vẹn niềm vui bên cạnh thiên thần của
-							bạn</h3>
+						<h3 class="f-prata">Cùng Monlife tận hưởng trọn vẹn niềm vui bên cạnh thiên thần của bạn</h3>
 					</li>
 				</ul>
 			</div>
@@ -485,8 +528,7 @@
 					</div>
 					<div class="block__link-2">
 						<h3 class="title f-prata">Subscribe</h3>
-						<p>Đăng ký ngay để cập nhật tài liệu miễn phí, những ý tưởng<br>và cảm hứng mới nhé!
-						</p>
+						<p>Đăng ký ngay để cập nhật tài liệu miễn phí, những ý tưởng<br>và cảm hứng mới nhé!</p>
 						<ul>
 							<li>
 								<input type="text" placeholder="Nhập địa chỉ email của bạn">
@@ -500,7 +542,7 @@
 						<h3 class="title f-prata">Liên kết MonLife</h3>
 						<ul>
 							<li>
-								<a href="index.html">Trang Chủ</a>
+								<a href="index.html">Trang chủ</a>
 							</li>
 							<li>
 								<a href="ve-chung-toi.html">Về MonLife</a>

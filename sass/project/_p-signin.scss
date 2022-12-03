@@ -80,3 +80,31 @@
         }
     }
 }
+
+.forgot-password {
+    margin-bottom: 20px;
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            color: #5B712E;
+        }
+    }
+}
+
+.note {
+    margin-bottom: 15px;
+    color: #5B712E;
+    ;
+}
+
+.notetifi {
+    background-color: #dfefdf;
+    color: #5ead60;
+    padding: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+}

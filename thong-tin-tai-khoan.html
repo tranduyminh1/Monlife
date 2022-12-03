@@ -27,9 +27,50 @@
 	<!-- Menu mobile -->
 	<section class="c-menu-mobile">
 		<div class="c-menu-mobile__inner">
-			<div class="c-menu-mobile__search">
-				<input type="text" placeholder="Nhập nội dung cần tìm...">
-				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			<div class="group-search-user">
+				<div class="c-menu-mobile__search">
+					<input type="text" placeholder="Nhập nội dung cần tìm...">
+					<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+				</div>
+				<div class="mobile-user">
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="c-menu-mobile__inner__navigation">
 				<ul class="navigation">
@@ -469,8 +510,8 @@
 					<div class="row">
 						<div class="col">
 							<div class="form">
-								<label>Họ và tên</label>
-								<input type="text" placeholder="" value="Trần Duy Minh" class="form-control" disabled>
+								<label>Họ và tên</label>
+								<input type="text" placeholder="" value="Trần Duy Minh" class="form-control" disabled>
 							</div>
 							<div class="form">
 								<label>Email</label>
@@ -478,19 +519,19 @@
 									disabled>
 							</div>
 							<div class="form">
-								<label>Địa chỉ</label>
+								<label>Địa chỉ</label>
 								<input type="text" placeholder=""
-									value="1135/41/24 Huỳnh Tấn Phát, P Phú Thuận, Quận 7" class="form-control"
+									value="1135/41/24 Huỳnh Tấn Phát, Phường Phú Thuận, Q7" class="form-control"
 									disabled>
 							</div>
 							<div class="form btn-pc">
-								<a href="cap-nhat-thong-tin-tai-khoan.html" class="c-btn update-account">CẬP NHẬT TÀI
-									KHOẢN</a>
+								<a href="cap-nhat-thong-tin-tai-khoan.html" class="c-btn update-account">CẬP NHẬT TÀI
+									KHOẢN</a>
 							</div>
 						</div>
 						<div class="col">
 							<div class="form">
-								<label>Số điện thoại</label>
+								<label>Số điện thoại</label>
 								<input type="text" placeholder="" value="0907909209" class="form-control" disabled>
 							</div>
 							<div class="form">
@@ -499,7 +540,7 @@
 									disabled>
 							</div>
 							<div class="form">
-								<label>Mật khẩu</label>
+								<label>Mật khẩu</label>
 								<input type="password" placeholder="" value="0907909209" class="form-control"
 									id="password-field" disabled>
 								<span toggle="#password-field" class="toggle-password">
@@ -508,8 +549,8 @@
 								</span>
 							</div>
 							<div class="form btn-mobile">
-								<a href="cap-nhat-thong-tin-tai-khoan.html" class="c-btn update-account">CẬP NHẬT TÀI
-									KHOẢN</a>
+								<a href="cap-nhat-thong-tin-tai-khoan.html" class="c-btn update-account">CẬP NHẬT TÀI
+									KHOẢN</a>
 							</div>
 						</div>
 					</div>
@@ -520,7 +561,7 @@
 	<!-- End checkout content -->
 
 	<!-- Footer -->
-	<footer class=" l-footer">
+	<footer class="l-footer">
 		<div class="l-footer__head">
 			<div class="l-footer__head__inner">
 				<ul>
@@ -528,8 +569,7 @@
 						<img src="./assets/img/common/fig_logo_01-01.svg" alt="Monlife">
 					</li>
 					<li>
-						<h3 class="f-prata">Cùng Monlife tận hưởng trọn vẹn niềm vui bên cạnh thiên thần của
-							bạn</h3>
+						<h3 class="f-prata">Cùng Monlife tận hưởng trọn vẹn niềm vui bên cạnh thiên thần của bạn</h3>
 					</li>
 				</ul>
 			</div>
@@ -561,8 +601,7 @@
 					</div>
 					<div class="block__link-2">
 						<h3 class="title f-prata">Subscribe</h3>
-						<p>Đăng ký ngay để cập nhật tài liệu miễn phí, những ý tưởng<br>và cảm hứng mới nhé!
-						</p>
+						<p>Đăng ký ngay để cập nhật tài liệu miễn phí, những ý tưởng<br>và cảm hứng mới nhé!</p>
 						<ul>
 							<li>
 								<input type="text" placeholder="Nhập địa chỉ email của bạn">
@@ -576,7 +615,7 @@
 						<h3 class="title f-prata">Liên kết MonLife</h3>
 						<ul>
 							<li>
-								<a href="index.html">Trang Chủ</a>
+								<a href="index.html">Trang chủ</a>
 							</li>
 							<li>
 								<a href="ve-chung-toi.html">Về MonLife</a>

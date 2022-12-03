@@ -27,9 +27,50 @@
 	<!-- Menu mobile -->
 	<section class="c-menu-mobile">
 		<div class="c-menu-mobile__inner">
-			<div class="c-menu-mobile__search">
-				<input type="text" placeholder="Nhập nội dung cần tìm...">
-				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			<div class="group-search-user">
+				<div class="c-menu-mobile__search">
+					<input type="text" placeholder="Nhập nội dung cần tìm...">
+					<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+				</div>
+				<div class="mobile-user">
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="c-menu-mobile__inner__navigation">
 				<ul class="navigation">
@@ -423,38 +464,52 @@
 				<div class="navigation-pc">
 					<ul>
 						<li>
-							<a href="">
+							<a href="#">
 								<img src="./assets/img/shop/icn_kitchen_01.svg" alt="Monlife">
 								<img src="./assets/img/shop/icn_kitchen_01a.svg" alt="Monlife">
-								Ăn uống và bếp núc
+								<span>Ăn uống và bếp núc</span>
 							</a>
 						</li>
 						<li>
-							<a class="active" href="">
-								<img src="./assets/img/shop/icn_bed_01.svg" alt="Monlife">
-								<img src="./assets/img/shop/icn_bed_01a.svg" alt="Monlife">
-								Phòng ngủ
+							<a class="active" href="#">
+								<img src="./assets/img/shop/icn_child-bed_01.png" alt="Monlife">
+								<img src="./assets/img/shop/icn_child-bed_01a.png" alt="Monlife">
+								<span>Nghỉ ngơi, thư giãn</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
-								<img src="./assets/img/shop/icn_take-care_01.svg" alt="Monlife">
-								<img src="./assets/img/shop/icn_take-care_01a.svg" alt="Monlife">
-								Chăm sóc bản thân
+							<a href="#">
+								<img src="./assets/img/shop/icn_take-care_01.png" alt="Monlife">
+								<img src="./assets/img/shop/icn_take-care_01a.png" alt="Monlife">
+								<span>Chăm sóc bản thân<br>& môi trường</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
-								<img src="./assets/img/shop/icn_toy_01.svg" alt="Monlife">
-								<img src="./assets/img/shop/icn_toy_01a.svg" alt="Monlife">
-								Đồ chơi và nghệ thuật
+							<a href="#">
+								<img src="./assets/img/shop/icn_toy_01.png" alt="Monlife">
+								<img src="./assets/img/shop/icn_toy_01a.png" alt="Monlife">
+								<span>Đồ chơi</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
-								<img src="./assets/img/shop/icn_study_01.svg" alt="Monlife">
-								<img src="./assets/img/shop/icn_study_01a.svg" alt="Monlife">
-								Giáo cụ học thuật
+							<a href="#">
+								<img src="./assets/img/shop/icn_activity_01.png" alt="Monlife">
+								<img src="./assets/img/shop/icn_activity_01a.png" alt="Monlife">
+								<span>Vận động</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./assets/img/shop/icn_art_01.png" alt="Monlife">
+								<img src="./assets/img/shop/icn_art_01a.png" alt="Monlife">
+								<span>Nghệ thuật</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./assets/img/shop/icn_hocthuat_01.png" alt="Monlife">
+								<img src="./assets/img/shop/icn_hocthuat_01a.png" alt="Monlife">
+								<span>Học thuật</span>
 							</a>
 						</li>
 					</ul>
@@ -462,15 +517,16 @@
 			</div>
 			<div class="p-shop__inner__note">
 				<h3>
-					<img src="./assets/img/shop/icn_bed_01.svg" alt="Monlife">
+					<img src="./assets/img/shop/icn_child-bed_01.png" alt="Monlife">
 					<span>Phòng ngủ</span>
 				</h3>
-				<p>Sleep is vital for the growth of a child. It is the foundation for a child's ability to be
-					resilient--to complete day-to-day tasks despite challenges and manage their emotions. We understand
-					the difficulties of bedtime all too well as we are parents too! There are many ways of approaching
-					this sometimes complicated daily event, and with so many strategies, parents can get overwhelmed.
-					Here are a few of our favorite products and resources for helping parents and children have a
-					positive relationship with sleep and rest.</p>
+				<p>Giấc ngủ rất quan trọng đối với sự phát triển của một đứa trẻ. Đó là nền tảng cho khả năng của trẻ
+					kiên cường--để hoàn thành các công việc hàng ngày bất chấp những thách thức và quản lý cảm xúc của
+					họ. Chúng ta hiểu
+					những khó khăn khi đi ngủ cũng vậy vì chúng ta cũng là cha mẹ! Có nhiều cách tiếp cận
+					sự kiện hàng ngày đôi khi phức tạp này và với rất nhiều chiến lược, cha mẹ có thể bị choáng ngợp.
+					Dưới đây là một số sản phẩm và tài nguyên yêu thích của chúng tôi để giúp phụ huynh và trẻ em có một
+					mối quan hệ tích cực với giấc ngủ và nghỉ ngơi.</p>
 			</div>
 			<div class="p-shop__inner__slider">
 				<div class="shop-slider">
@@ -535,14 +591,16 @@
 					<img src="./assets/img/shop/img_text_01.jpg" alt="Monlife">
 				</div>
 				<div class="text">
-					<p>"I'm a pediatric sleep consultant, so I help get babies and toddlers to sleep and I love it. For
-						my own daughter, she has loved her bed. It's so fun to see her independence and sleeping well on
-						her own terms."</p>
-					<a href="#">Step into Jordan's home</a>
+					<p>"Tôi là chuyên gia tư vấn về giấc ngủ cho trẻ em, vì vậy tôi giúp trẻ sơ sinh và trẻ mới biết đi
+						ngủ và tôi thích điều đó. Vì
+						con gái riêng của tôi, cô ấy đã yêu chiếc giường của mình. Thật vui khi thấy bé tự lập và ngủ
+						ngon
+						điều khoản của riêng cô ấy."</p>
+					<a href="#">Bước vào nhà của Jordan</a>
 				</div>
 			</div>
 			<div class="other-shop-blog">
-				<h3>Bài viết và videos liên quan</h3>
+				<h3>Bài viết và videos liên quan</h3>
 				<ul>
 					<li>
 						<div class="blog">
@@ -552,9 +610,9 @@
 							<div class="title">
 								<h4><img src="./assets/img/shop/icn_youtube_01.svg" alt="Monlife"> <a href="#">YouTube
 										video</a></h4>
-								<h5><a href="#">Floor Bed Questions Answered</a></h5>
-								<p>The Hapa family shares tips for safety, how to respond when kids get out of bed, and
-									helping your baby learn to fall asleep solo.</p>
+								<h5><a href="#">Câu hỏi về giường tầng đã được trả lời</a></h5>
+								<p>Gia đình Hapa chia sẻ bí quyết an toàn, cách ứng phó khi trẻ ra khỏi giường và
+									giúp bé học cách ngủ một mình.</p>
 							</div>
 						</div>
 					</li>
@@ -565,9 +623,9 @@
 							</div>
 							<div class="title">
 								<h4><img src="./assets/img/shop/icn_pen_01.svg" alt="Monlife"> <a href="#">Blog</a></h4>
-								<h5><a href="#">Floor Bed Questions Answered</a></h5>
-								<p>The Hapa family shares tips for safety, how to respond when kids get out of bed, and
-									helping your baby learn to fall asleep solo.</p>
+								<h5><a href="#">Câu hỏi về giường tầng đã được trả lời</a></h5>
+								<p>Gia đình Hapa chia sẻ bí quyết an toàn, cách ứng phó khi trẻ ra khỏi giường và
+									giúp bé học cách ngủ một mình.</p>
 							</div>
 						</div>
 					</li>
@@ -579,9 +637,9 @@
 							<div class="title">
 								<h4><img src="./assets/img/shop/icn_facebook_01.svg" alt="Monlife"> <a
 										href="#">Facebook</a></h4>
-								<h5><a href="#">Floor Bed Questions Answered</a></h5>
-								<p>The Hapa family shares tips for safety, how to respond when kids get out of bed, and
-									helping your baby learn to fall asleep solo.</p>
+								<h5><a href="#">Câu hỏi về giường tầng đã được trả lời</a></h5>
+								<p>Gia đình Hapa chia sẻ bí quyết an toàn, cách ứng phó khi trẻ ra khỏi giường và
+									giúp bé học cách ngủ một mình.</p>
 							</div>
 						</div>
 					</li>

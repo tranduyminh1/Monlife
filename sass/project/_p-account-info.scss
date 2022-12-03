@@ -288,7 +288,6 @@
                         li:nth-child(1) {
                             width: 20%;
                             flex: 20%;
-
                         }
 
                         li:nth-child(2) {
@@ -314,7 +313,6 @@
                     &__block {
                         &__bl {
                             display: flex;
-                            flex-wrap: wrap;
                             padding-left: 35px;
                             padding-right: 35px;
                             align-items: center;
@@ -333,6 +331,10 @@
                                 padding-right: 0px;
                             }
 
+                            @include br500 {
+                                flex-wrap: wrap;
+                            }
+
                             .img {
                                 flex: 15%;
 
@@ -344,7 +346,7 @@
 
                                 @include br990 {
                                     flex: 20%;
-                                    margin-bottom: 30px;
+                                    margin-bottom: 0px;
 
                                     img {
                                         width: 80px;
@@ -362,10 +364,23 @@
                             .name {
                                 flex: 30%;
 
+                                @include br990 {
+                                    margin-bottom: 0px !important;
+                                    padding-left: 20px;
+                                }
+
+                                @include br500 {
+                                    padding-left: 0px;
+                                }
+
                                 a {
                                     @include fs(16);
                                     font-weight: 600;
                                     margin-bottom: 10px;
+
+                                    @include br990 {
+                                        margin-bottom: 0px;
+                                    }
 
                                     &:hover {
                                         color: #5B712E;
@@ -466,17 +481,38 @@
                             .img {
                                 width: 20%;
                                 flex: 20%;
+
+                                @include br990 {
+                                    width: initial;
+                                    flex: initial;
+                                }
+
+                                @include br500 {
+                                    width: initial;
+                                    flex: 100%;
+                                    margin-bottom: 20px;
+                                }
                             }
 
                             .name {
                                 width: 45%;
                                 flex: 45%;
+
+                                @include br500 {
+                                    width: initial;
+                                    flex: 1;
+                                }
                             }
 
                             .remove {
                                 width: 35%;
                                 flex: 35%;
                                 text-align: right;
+
+                                @include br500 {
+                                    width: initial;
+                                    flex: initial;
+                                }
                             }
                         }
                     }

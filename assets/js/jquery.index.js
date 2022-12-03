@@ -269,6 +269,7 @@ $(window).load(function () {
 				breakpoint: 920,
 				settings: {
 					slidesToShow: 2,
+					arrows: false,
 				}
 			}]
 		});

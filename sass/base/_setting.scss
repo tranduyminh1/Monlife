@@ -58,9 +58,6 @@ body {
 	color: #4A4A4A;
 	@include fs(16);
 	font-family: 'Nunito', sans-serif;
-	font-feature-settings: "halt" 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	font-weight: 300;
 	letter-spacing: 0.02em;
 }

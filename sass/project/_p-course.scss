@@ -302,7 +302,16 @@
         margin-bottom: 20px;
 
         p {
-            span {
+            display: flex;
+
+            @include br1200 {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            span:nth-child(1) {}
+
+            span:nth-child(2) {
                 color: #BF0000;
                 @include fs(16);
                 font-weight: bold;
@@ -317,7 +326,6 @@
 
         ul {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
 
@@ -325,10 +333,7 @@
                 position: relative;
                 padding-left: 35px;
 
-                @include br990 {
-                    flex: 100%;
-                    margin-bottom: 20px;
-                }
+                @include br990 {}
 
                 &:after {
                     content: "";

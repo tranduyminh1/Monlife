@@ -9,11 +9,11 @@
 
     @include br1200 {
         padding-top: 105px;
-        background-position: -220px;
+        background-position: -220px !important;
     }
 
     @include br690 {
-        background-position: -330px;
+        background-position: -250px !important;
     }
 
     @include br500 {

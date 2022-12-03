@@ -28,9 +28,50 @@
 	<!-- Menu mobile -->
 	<section class="c-menu-mobile">
 		<div class="c-menu-mobile__inner">
-			<div class="c-menu-mobile__search">
-				<input type="text" placeholder="Nhập nội dung cần tìm...">
-				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			<div class="group-search-user">
+				<div class="c-menu-mobile__search">
+					<input type="text" placeholder="Nhập nội dung cần tìm...">
+					<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+				</div>
+				<div class="mobile-user">
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="c-menu-mobile__inner__navigation">
 				<ul class="navigation">
@@ -505,6 +546,52 @@
 						</ul>
 					</div>
 					<div class="options">
+						<p>Màu sắc</p>
+						<ul class="color-pick">
+							<li>
+								<input type="radio" name="color" id="red" value="red" />
+								<label for="red"><span class="red"></span></label>
+							</li>
+							<li>
+								<input type="radio" name="color" id="green" />
+								<label for="green"><span class="green"></span></label>
+							</li>
+							<li>
+								<input type="radio" name="color" id="yellow" />
+								<label for="yellow"><span class="yellow"></span></label>
+							</li>
+							<li>
+								<input type="radio" name="color" id="olive" />
+								<label for="olive"><span class="olive"></span></label>
+							</li>
+							<li>
+								<input type="radio" name="color" id="orange" />
+								<label for="orange"><span class="orange"></span></label>
+							</li>
+							<li>
+								<input type="radio" name="color" id="orange" />
+								<label for="orange"><span class="orange"></span></label>
+							</li>
+							<li>
+								<input type="radio" name="color" id="teal" />
+								<label for="teal"><span class="teal"></span></label>
+							</li>
+							<li>
+								<input type="radio" name="color" id="blue" />
+								<label for="blue"><span class="blue"></span></label>
+							</li>
+							<li><input type="radio" name="color" id="violet" />
+								<label for="violet"><span class="violet"></span></label>
+							</li>
+							<li><input type="radio" name="color" id="purple" />
+								<label for="purple"><span class="purple"></span></label>
+							</li>
+							<li><input type="radio" name="color" id="pink" />
+								<label for="pink"><span class="pink"></span></label>
+							</li>
+						</ul>
+					</div>
+					<div class="options">
 						<p>Kích thước</p>
 						<ul>
 							<li>
@@ -564,6 +651,28 @@
 							</ul>
 							<p>Leaves our workshop within 4-5 weeks.</p>
 						</div>
+					</div>
+					<div class="c-share">
+						<ul>
+							<li>
+								<a class="bookmark" href="#"><i class="far fa-bookmark"></i></a>
+							</li>
+							<li>
+								<a class="social" href="#"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li>
+								<a class="social" href="#"><i class="fab fa-twitter"></i></a>
+							</li>
+							<li>
+								<a class="zalo" href="#">
+									<img src="./assets/img/common/icn_zalo_01.svg" alt="Share">
+									<img src="./assets/img/common/icn_zalo_01a.svg" alt="Share">
+								</a>
+							</li>
+							<li>
+								<a class="social" href="#"><i class="fab fa-instagram"></i></a>
+							</li>
+						</ul>
 					</div>
 					<div class="product-description">
 						<p>Low beds are a great way to encourage autonomy and freedom in the early developmental stages
@@ -861,7 +970,7 @@
 					</ul>
 				</div>
 				<div class="other-shop-blog">
-					<h3>Bài viết và videos liên quan</h3>
+					<h3>Bài viết và videos liên quan</h3>
 					<ul>
 						<li>
 							<div class="blog">
@@ -1045,7 +1154,7 @@
 						<h3 class="title f-prata">Liên kết MonLife</h3>
 						<ul>
 							<li>
-								<a href="index.html">Trang Chủ</a>
+								<a href="index.html">Trang chủ</a>
 							</li>
 							<li>
 								<a href="ve-chung-toi.html">Về MonLife</a>

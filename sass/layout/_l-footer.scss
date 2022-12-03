@@ -18,13 +18,17 @@
 				align-items: center;
 				justify-content: space-between;
 
-				@include br739 {
+				@include br1200 {
 					flex-wrap: wrap;
 				}
 
 				li {
 					img {
 						width: 217px;
+
+						@include br1200 {
+							width: 190px;
+						}
 					}
 
 					h3 {
@@ -34,12 +38,13 @@
 
 						@include br1200 {
 							@include fs(20);
+							text-align: center;
 						}
 					}
 				}
 
 				li:first-child {
-					@include br739 {
+					@include br1200 {
 						flex: 100%;
 						text-align: center;
 						margin-bottom: 20px;
@@ -48,10 +53,11 @@
 
 				li:last-child {
 					@include br1200 {
-						padding-left: 40px;
+						padding-left: 0px;
+						flex: 100%;
 					}
 
-					@include br739 {
+					@include br1200 {
 						padding-left: 0px;
 						text-align: center;
 					}
@@ -148,7 +154,7 @@
 								width: 25px;
 								height: 28px;
 								left: 0px;
-								top: 0px;
+								top: -5px;
 								background: no-repeat url(../../assets/img/common/icn_footer_address_01.png);
 							}
 						}
@@ -160,7 +166,7 @@
 								width: 28px;
 								height: 22px;
 								left: 0px;
-								top: 0px;
+								top: -3px;
 								background: no-repeat url(../../assets/img/common/icn_footer_address_02.png);
 							}
 						}
@@ -172,7 +178,7 @@
 								width: 28px;
 								height: 16px;
 								left: 0px;
-								top: 5px;
+								top: 0px;
 								background: no-repeat url(../../assets/img/common/icn_footer_address_03.png);
 							}
 						}

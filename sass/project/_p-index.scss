@@ -276,6 +276,10 @@
                         @include br1200 {
                             @include fs(15);
                         }
+
+                        @include br890 {
+                            padding-right: 0px;
+                        }
                     }
 
                     .c-btn {

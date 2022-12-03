@@ -27,9 +27,50 @@
 	<!-- Menu mobile -->
 	<section class="c-menu-mobile">
 		<div class="c-menu-mobile__inner">
-			<div class="c-menu-mobile__search">
-				<input type="text" placeholder="Nhập nội dung cần tìm...">
-				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			<div class="group-search-user">
+				<div class="c-menu-mobile__search">
+					<input type="text" placeholder="Nhập nội dung cần tìm...">
+					<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+				</div>
+				<div class="mobile-user">
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="c-menu-mobile__inner__navigation">
 				<ul class="navigation">
@@ -424,33 +465,33 @@
 					<div class="blog-category">
 						<div class="blog-category__search">
 							<div class="form">
-								<input type="text" placeholder="Tìm kiếm">
+								<input type="text" placeholder="Tìm kiếm">
 								<a href="#"><img src="./assets/img/common/icn_search_03.svg" alt="Search"></a>
 							</div>
 						</div>
 						<div class="blog-category__menu">
-							<h3>Danh mục</h3>
+							<h3>Danh mục</h3>
 							<ol>
 								<li>
-									<a class="active" href="#">Principles</a>
+									<a class="active" href="#">Danh mục 1</a>
 								</li>
 								<li>
-									<a href="#">History</a>
+									<a href="#">Danh mục 2</a>
 								</li>
 								<li>
-									<a href="#">Application</a>
+									<a href="#">Danh mục 3</a>
 								</li>
 							</ol>
 						</div>
 						<div class="blog-category__archive">
-							<h3>Bài viết liên quan</h3>
+							<h3>Bài viết liên quan</h3>
 							<div class="block">
 								<div class="block__img">
 									<img src="./assets/img/blogs/img_archive_01.jpg" alt="Montessori">
 								</div>
 								<div class="block__text">
 									<p>24/11/2022</p>
-									<h4><a href="#">10 Skills Which Kids Will Learn</a></h4>
+									<h4><a href="#">10 kỹ năng mà trẻ em sẽ học</a></h4>
 								</div>
 							</div>
 							<div class="block">
@@ -459,7 +500,7 @@
 								</div>
 								<div class="block__text">
 									<p>24/11/2022</p>
-									<h4><a href="#">10 Skills Which Kids Will Learn</a></h4>
+									<h4><a href="#">10 kỹ năng mà trẻ em sẽ học</a></h4>
 								</div>
 							</div>
 						</div>
@@ -489,23 +530,50 @@
 					</div>
 				</div>
 				<div class="col-right">
+					<!-- Mobile danh mục -->
+					<div class="mb-category">
+						<div class="mb-category__search">
+							<div class="form" data-dashlane-rid="fb87d1a10f92a71f" data-form-type="other">
+								<input type="text" placeholder="Tìm kiếm" data-dashlane-rid="f54ab73ff2c68e07"
+									data-form-type="other">
+								<a href="#"><img src="./assets/img/common/icn_search_03.svg" alt="Search"></a>
+							</div>
+						</div>
+						<div class="mb-category__menu">
+							<h3>Danh mục</h3>
+							<ol>
+								<li>
+									<a class="active" href="#">Danh mục 1</a>
+								</li>
+								<li>
+									<a href="#">Danh mục 2</a>
+								</li>
+								<li>
+									<a href="#">Danh mục 3</a>
+								</li>
+							</ol>
+						</div>
+					</div>
 					<div class="blog-box">
+						<h3>10 kỹ năng mà trẻ em sẽ học</h3>
 						<img class="img-detail" src="./assets/img/blogs/img_about-2.jpg" alt="Montessori">
-						<p>There are 7 core principles of Waldorf Education:</p>
+						<p>Có 7 nguyên tắc cốt lõi của Giáo dục Waldorf::</p>
 						<ol>
-							<li>Image of the human being</li>
-							<li>Phases of child development</li>
-							<li>Developmental curriculum</li>
-							<li>Freedom in teaching</li>
-							<li>Methodology of teaching</li>
-							<li>Relationships</li>
-							<li>Spiritual orientation</li>
+							<li>Hình ảnh con người</li>
+							<li>Các giai đoạn phát triển của trẻ</li>
+							<li>Chương trình phát triển</li>
+							<li>Tự do giảng dạy</li>
+							<li>Phương pháp giảng dạy</li>
+							<li>Mối quan hệ</li>
+							<li>Định hướng tâm linh</li>
 						</ol>
-						<p>(Dig deeper into the 7 core principles in the Resources below.)</p>
-						<p>You can start to prepare your classroom or home to support the Montessori philosophy by
-							setting up a space that is accessible to kids—child-sized furniture</p>
-						<p>You can start to prepare your classroom or home to support the Montessori philosophy by
-							setting up a space that is accessible to kids—child-sized furniture</p>
+						<p>(Tìm hiểu sâu hơn về 7 nguyên tắc cốt lõi trong Tài nguyên bên dưới.)</p>
+						<p>Bạn có thể bắt đầu chuẩn bị lớp học hoặc ngôi nhà của mình để hỗ trợ triết lý Montessori bằng
+							cách
+							thiết lập một không gian mà trẻ em có thể tiếp cận đồ nội thất cỡ trẻ em</p>
+						<p>Bạn có thể bắt đầu chuẩn bị lớp học hoặc ngôi nhà của mình để hỗ trợ triết lý Montessori bằng
+							cách
+							thiết lập một không gian mà trẻ em có thể tiếp cận đồ nội thất cỡ trẻ em</p>
 						<div class="c-share">
 							<ul>
 								<li>
@@ -531,7 +599,7 @@
 						<!-- comment -->
 						<div class="c-comment">
 							<div class="c-comment__title-1">
-								<h3>Bình luận</h3>
+								<h3>Bình luận</h3>
 							</div>
 							<div class="c-comment__block">
 								<div class="c-comment__block__media">
@@ -585,12 +653,12 @@
 								</div>
 							</div>
 							<div class="c-comment__title-2">
-								<h3>Viết Bình Luận</h3>
+								<h3>Viết bình luận</h3>
 							</div>
 							<div class="c-comment__rating">
 								<div class="c-ranking">
 									<div class="c-ranking__stars">
-										<p>Đánh giá của bạn</p>
+										<p>Đánh giá của bạn</p>
 									</div>
 								</div>
 							</div>
@@ -598,7 +666,7 @@
 								<textarea class="form-control" placeholder="Viết bình luận"></textarea>
 							</div>
 							<div class="c-comment__btn">
-								<a href="#" class="c-btn">gởi bình luận</a>
+								<a href="#" class="c-btn">gởi bình luận</a>
 							</div>
 						</div>
 					</div>
@@ -749,7 +817,7 @@
 						<h3 class="title f-prata">Liên kết MonLife</h3>
 						<ul>
 							<li>
-								<a href="index.html">Trang Chủ</a>
+								<a href="index.html">Trang chủ</a>
 							</li>
 							<li>
 								<a href="ve-chung-toi.html">Về MonLife</a>

@@ -27,9 +27,50 @@
 	<!-- Menu mobile -->
 	<section class="c-menu-mobile">
 		<div class="c-menu-mobile__inner">
-			<div class="c-menu-mobile__search">
-				<input type="text" placeholder="Nhập nội dung cần tìm...">
-				<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+			<div class="group-search-user">
+				<div class="c-menu-mobile__search">
+					<input type="text" placeholder="Nhập nội dung cần tìm...">
+					<button type="button"><img src="./assets/img/common/icn_search_02.svg" alt="Search"></button>
+				</div>
+				<div class="mobile-user">
+					<div class="user">
+						<div class="c-dropdown">
+							<a href="#" class="user__btn dropdown-toggle">
+								<img src="./assets/img/common/icn_user_01.svg" alt="Search">
+							</a>
+							<div class="dropdown">
+								<div class="user__profile">
+									<ul>
+										<li>
+											<img src="./assets/img/common/icn_avatar_02.svg" alt="Avatar">
+										</li>
+										<li>
+											<p>Bạn là khách</p>
+										</li>
+									</ul>
+								</div>
+								<div class="user__menu">
+									<ul>
+										<li>
+											<a href="dang-ky.html">
+												<img src="./assets/img/common/icn_user_01.svg" alt="User">
+												<img src="./assets/img/common/icn_user_01a.svg" alt="User">
+												<span>Đăng ký</span>
+											</a>
+										</li>
+										<li>
+											<a href="dang-nhap.html">
+												<img src="./assets/img/common/icn_logout_01.svg" alt="Logout">
+												<img src="./assets/img/common/icn_logout_01a.svg" alt="Logout">
+												<span>Đăng nhập</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="c-menu-mobile__inner__navigation">
 				<ul class="navigation">
@@ -418,7 +459,7 @@
 						</li>
 					</ul>
 				</div>
-				<h2>Đưa Mon về nhà: 0 - 2,5 tuổi</h2>
+				<h2>Đưa Mon về nhà 0 - 2,5 tuổi</h2>
 				<div class="c-ranking">
 					<ul>
 						<li>
@@ -445,18 +486,18 @@
 					<span class="price-r">3.000.000 VNĐ</span>
 				</li>
 				<li>
-					<span class="time-l">Thơi gian</span>
+					<span class="time-l">Thời gian</span>
 					<span class="time-r">2h 30m</span>
 				</li>
 				<li>
-					<span class="lesson-l">Số bài học</span>
+					<span class="lesson-l">Số bài học</span>
 					<span class="lesson-r">36</span>
 				</li>
 			</ul>
 			<a href="vao-lop-hoc.html" class="c-btn c-blue">Vào lớp học</a>
 			<div class="note">
 				<div class="date">
-					<p>Ngày bặt đầu <span>11/13/2022</span></p>
+					<p><span>Ngày bắt đầu</span> <span>11/13/2022</span></p>
 				</div>
 				<div class="time">
 					<ul>
@@ -468,11 +509,11 @@
 					<div class="process__line">
 						<div class="process__line__done" style="width:40%;"></div>
 					</div>
-					<p>Đã hoàn thành 40%</p>
+					<p>Đã hoàn thành 40%</p>
 				</div>
 			</div>
 			<div class="share">
-				<h4>Chia sẻ</h4>
+				<h4>Chi sẻ</h4>
 				<div class="c-share">
 					<ul>
 						<li>
@@ -517,18 +558,18 @@
 								<span class="price-r">3.000.000 VNĐ</span>
 							</li>
 							<li>
-								<span class="time-l">Thơi gian</span>
+								<span class="time-l">Thời gian</span>
 								<span class="time-r">2h 30m</span>
 							</li>
 							<li>
-								<span class="lesson-l">Số bài học</span>
+								<span class="lesson-l">Số bài học</span>
 								<span class="lesson-r">36</span>
 							</li>
 						</ul>
 						<a href="vao-lop-hoc.html" class="c-btn c-blue">Vào lớp học</a>
 						<div class="note">
 							<div class="date">
-								<p>Ngày bặt đầu <span>11/13/2022</span></p>
+								<p><span>Ngày bắt đầu</span> <span>11/13/2022</span></p>
 							</div>
 							<div class="time">
 								<ul>
@@ -540,11 +581,11 @@
 								<div class="process__line">
 									<div class="process__line__done" style="width:40%;"></div>
 								</div>
-								<p>Đã hoàn thành 40%</p>
+								<p>Đã hoàn thành 40%</p>
 							</div>
 						</div>
 						<div class="share">
-							<h4>Chia sẻ</h4>
+							<h4>Chia sẻ</h4>
 							<div class="c-share">
 								<ul>
 									<li>
@@ -571,24 +612,28 @@
 					</div>
 					<div class="tabs-content">
 						<div id="tab1" class="tab-content">
-							<h3>About This Class</h3>
-							<p><strong>Want to take your journaling practice to the next level? Learn how to go beyond
-									the written word with art journaling.</strong></p>
-							<p>In this class you'll learn how to art journal using hand-drawn images and color. Art
-								journaling is a wellness tool that incorporates creativity, exploration of expression,
-								mindfulness, and connectivity to self.</p>
-							<h4>You’ll learn:</h4>
+							<h3>Giới thiệu về lớp học này</h3>
+							<p><strong>Bạn muốn đưa thực hành viết nhật ký của mình lên một tầm cao mới? Học cách vượt
+									qua
+									chữ viết với nhật ký nghệ thuật.</strong></p>
+							<p>Trong lớp học này, bạn sẽ học cách viết nhật ký nghệ thuật bằng cách sử dụng hình ảnh và
+								màu vẽ tay. Mỹ thuật
+								viết nhật ký là một công cụ chăm sóc sức khỏe kết hợp sự sáng tạo, khám phá cách diễn
+								đạt,
+								chánh niệm và kết nối với bản thân.</p>
+							<h4>Bạn sẽ học:</h4>
 							<ul>
-								<li>How to observe real-world textures and why that will enhance the accuracy of your
+								<li>Cách quan sát kết cấu trong thế giới thực và tại sao điều đó sẽ nâng cao độ chính
+									xác của bạn
 								</li>
-								<li>When to fade textures out or add more detail to give the illusion of distance.</li>
+								<li>Khi nào nên làm mờ họa tiết hoặc thêm chi tiết để tạo ảo giác về khoảng cách.</li>
 							</ul>
 							<img src="./assets/img/course/img_course_03.jpg" alt="Monlife">
 						</div>
 						<div id="tab2" class="tab-content">
 							<div class="section">
 								<div class="section__block">
-									<h3>Section 1. Đưa Mon về nhà: 0 - 2,5 tuổi</h3>
+									<h3>Section 1. Đưa Mon về nhà 0 - 2,5 tuổi</h3>
 									<div class="section__block__box">
 										<div class="lesson-list">
 											<ul>
@@ -681,7 +726,7 @@
 									</div>
 								</div>
 								<div class="section__block">
-									<h3>Section 2. Đưa Mon về nhà: 0 - 2,5 tuổi</h3>
+									<h3>Section 2. Đưa Mon về nhà 0 - 2,5 tuổi</h3>
 									<div class="section__block__box">
 										<div class="lesson-list">
 											<ul>
@@ -837,7 +882,7 @@
 						<h3 class="title f-prata">Liên kết MonLife</h3>
 						<ul>
 							<li>
-								<a href="index.html">Trang Chủ</a>
+								<a href="index.html">Trang chủ</a>
 							</li>
 							<li>
 								<a href="ve-chung-toi.html">Về MonLife</a>

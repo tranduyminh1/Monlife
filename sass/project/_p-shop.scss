@@ -16,99 +16,133 @@
             ul {
                 display: flex;
                 justify-content: space-between;
+                margin-left: -5px;
+                margin-right: -5px;
 
                 @include br890 {
                     flex-wrap: wrap;
                 }
 
                 li {
+                    padding-left: 5px;
+                    padding-right: 5px;
+
                     a {
-                        display: block;
+                        display: flex;
+                        flex-wrap: wrap;
                         text-align: center;
+                        text-align: center;
+                        justify-content: center;
 
                         img {
+                            width: initial;
                             height: 50px;
                             margin-bottom: 15px;
                         }
 
-                        img:last-child {
+                        span {
+                            flex: 100%;
+                            @include fs(15);
+                        }
+
+                        img:nth-child(1) {
+                            display: block;
+                        }
+
+                        img:nth-child(2) {
                             display: none;
                         }
 
                         &:hover {
                             color: #5B712E;
 
-                            img:first-child {
+                            img:nth-child(1) {
                                 display: none;
                             }
 
-                            img:last-child {
-                                display: inline-block;
+                            img:nth-child(2) {
+                                display: block;
                             }
                         }
                     }
 
                     .active {
-                        font-weight: bold;
                         color: #5B712E;
 
-                        img:first-child {
+                        img:nth-child(1) {
                             display: none;
                         }
 
-                        img:last-child {
-                            display: inline-block;
+                        img:nth-child(2) {
+                            display: block;
                         }
                     }
                 }
 
                 @include br890 {
                     li:nth-child(1) {
-                        flex: 33.33%;
+                        flex: 25%;
                         margin-bottom: 30px;
                     }
 
                     li:nth-child(2) {
-                        flex: 33.33%;
+                        flex: 25%;
                         margin-bottom: 30px;
                     }
 
                     li:nth-child(3) {
-                        flex: 33.33%;
+                        flex: 25%;
                         margin-bottom: 30px;
                     }
 
                     li:nth-child(4) {
-                        flex: 50%;
+                        flex: 25%;
+                        margin-bottom: 30px;
                     }
 
                     li:nth-child(5) {
-                        flex: 50%;
+                        flex: 33.33%;
+                    }
+
+                    li:nth-child(6) {
+                        flex: 33.33%;
+                    }
+
+                    li:nth-child(7) {
+                        flex: 33.33%;
                     }
                 }
 
                 @include br500 {
                     li:nth-child(1) {
-                        flex: 50%;
+                        flex: 33.33%;
                         margin-bottom: 30px;
                     }
 
                     li:nth-child(2) {
-                        flex: 50%;
+                        flex: 33.33%;
                         margin-bottom: 30px;
                     }
 
                     li:nth-child(3) {
-                        flex: 50%;
+                        flex: 33.33%;
                         margin-bottom: 30px;
                     }
 
                     li:nth-child(4) {
-                        flex: 50%;
+                        flex: 33.33%;
                     }
 
                     li:nth-child(5) {
-                        flex: 50%;
+                        flex: 33.33%;
+                    }
+
+                    li:nth-child(6) {
+                        flex: 33.33%;
+                    }
+
+                    li:nth-child(7) {
+                        flex: 100%;
                     }
                 }
             }
@@ -119,20 +153,12 @@
 
             h3 {
                 position: relative;
-                padding-left: 110px;
                 margin-bottom: 20px;
 
-                @include br500 {
-                    padding-left: 80px;
-                }
-
                 img {
-                    position: absolute;
-                    left: 0px;
-                    top: 50%;
-                    transform: translateY(-50%);
                     height: 50px;
                     width: inherit;
+                    vertical-align: sub;
 
                     @include br500 {
                         height: 40px;
@@ -143,6 +169,7 @@
                     @include fs(32);
                     font-family: 'Prata', serif;
                     font-weight: normal;
+                    padding-left: 10px;
 
                     @include br500 {
                         @include fs(26);
@@ -249,7 +276,7 @@
             }
 
             .gallery {
-                width: 490px;
+                width: 550px;
                 position: relative;
 
                 @include br890 {
@@ -368,14 +395,14 @@
                 }
 
                 .title {
-                    @include fs(36);
+                    @include fs(30);
                     font-weight: 800;
                     line-height: 1.2;
                     margin-bottom: 20px;
                 }
 
                 .price {
-                    @include fs(26);
+                    @include fs(20);
                     color: #000;
                     font-weight: 600;
                     margin-bottom: 20px;
@@ -499,7 +526,7 @@
                     &__btn {
                         flex: 1;
                         padding-left: 15px;
-                        margin-bottom: 50px;
+                        margin-bottom: 30px;
 
                         @include br690 {
                             flex: 100%;
@@ -532,6 +559,7 @@
                                     color: #fff;
                                     border-radius: 5px;
                                     margin-bottom: 10px;
+                                    @include fs(14);
 
                                     &:hover {
                                         background-color: #c4884a;
@@ -549,6 +577,7 @@
                                     color: #fff;
                                     border-radius: 5px;
                                     margin-bottom: 10px;
+                                    @include fs(14);
 
                                     &:hover {
                                         background-color: #c4884a;
@@ -584,6 +613,7 @@
                                     color: #fff;
                                     border-radius: 5px;
                                     margin-bottom: 10px;
+                                    @include fs(14);
 
                                     &:hover {
                                         background-color: #c4884a;
@@ -611,6 +641,7 @@
                                     color: #fff;
                                     border-radius: 5px;
                                     margin-bottom: 10px;
+                                    @include fs(14);
 
                                     &:hover {
                                         background-color: #c4884a;
@@ -650,6 +681,10 @@
                         margin-bottom: 0px;
                     }
                 }
+            }
+
+            .c-share {
+                margin-bottom: 40px;
             }
         }
 
@@ -857,6 +892,77 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+$colors: (
+    red: #DB2828,
+    orange: #F2711C,
+    yellow: #FBBD08,
+    olive: #B5CC18,
+    green: #21BA45,
+    teal: #00B5AD,
+    blue: #2185D0,
+    violet: #6435C9,
+    purple: #A333C8,
+    pink: #E03997
+);
+
+.color-pick {
+    flex-wrap: wrap;
+
+    li {
+        padding-left: 0px;
+    }
+
+    input[type="radio"] {
+        display: none;
+
+        &:checked+label {
+            span {
+                transform: scale(1.25);
+            }
+
+            @each $name,
+            $value in $colors {
+                .#{$name} {
+                    border: 2px solid darken($value, 25%);
+                }
+            }
+
+            // !@each
+        }
+
+        // !&:checked + label
+    }
+
+    label {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        border-radius: 50%;
+
+        &:hover {
+            span {
+                transform: scale(1.25);
+            }
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: transform .2s ease-in-out;
+            border-radius: 50%;
+
+            @each $name,
+            $value in $colors {
+                &.#{$name} {
+                    background: $value;
                 }
             }
         }

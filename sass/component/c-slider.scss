@@ -19,6 +19,56 @@
             position: relative;
         }
 
+        &__sale {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -100%);
+            z-index: 1;
+
+            @include br890 {
+                top: 50px;
+                transform: translateX(-50%);
+            }
+
+            @include br500 {
+                top: 100px;
+                transform: translateX(-50%);
+            }
+
+            h4 {
+                @include fs(28);
+                margin-bottom: 15px;
+                text-align: center;
+                color: #fff;
+                font-weight: normal;
+
+                @include br500 {
+                    @include fs(22);
+                }
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                background-color: #5B712E;
+                border-radius: 5px;
+                width: 350px;
+                height: 45px;
+                @include fs(16);
+
+                @include br500 {
+                    width: 300px;
+                    @include fs(14);
+                }
+            }
+
+        }
+
+
+
         .pc {
             display: block;
 
