@@ -1180,10 +1180,20 @@
         .coll {
             flex: 70%;
             padding-right: 100px;
+
+            @include br890 {
+                flex: 100%;
+                padding-right: 0px;
+                margin-bottom: 30px;
+            }
         }
 
         .colr {
             flex: 30%;
+
+            @include br890 {
+                flex: 100%;
+            }
 
             ul {
                 margin-left: 0px;

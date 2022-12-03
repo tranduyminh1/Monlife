@@ -6810,8 +6810,20 @@ textarea {
   flex: 70%;
   padding-right: 100px;
 }
+@media screen and (min-width: 200px) and (max-width: 910px) {
+  .document .row .coll {
+    flex: 100%;
+    padding-right: 0px;
+    margin-bottom: 30px;
+  }
+}
 .document .row .colr {
   flex: 30%;
+}
+@media screen and (min-width: 200px) and (max-width: 910px) {
+  .document .row .colr {
+    flex: 100%;
+  }
 }
 .document .row .colr ul {
   margin-left: 0px;
