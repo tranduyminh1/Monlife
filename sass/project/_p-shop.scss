@@ -271,20 +271,20 @@
             flex-wrap: wrap;
             margin-top: 60px;
 
-            @include br890 {
+            @include br1200 {
                 margin-top: 30px;
             }
 
             .gallery {
-                width: 550px;
+                width: 630px;
                 position: relative;
 
-                @include br890 {
+                @include br1200 {
                     width: 100%;
                 }
 
                 .sidebar__inner {
-                    @include br890 {
+                    @include br1200 {
                         position: relative !important;
                         top: initial !important;
                         left: initial !important;
@@ -319,7 +319,7 @@
                     .slick-prev {
                         left: 10px;
 
-                        @include br890 {
+                        @include br1200 {
                             left: 10px;
                         }
                     }
@@ -327,7 +327,7 @@
                     .slick-next {
                         right: 10px;
 
-                        @include br890 {
+                        @include br1200 {
                             right: 10px;
                         }
                     }
@@ -370,7 +370,7 @@
                     .slick-prev {
                         left: 10px;
 
-                        @include br890 {
+                        @include br1200 {
                             left: 10px;
                         }
                     }
@@ -378,7 +378,7 @@
                     .slick-next {
                         right: 10px;
 
-                        @include br890 {
+                        @include br1200 {
                             right: 10px;
                         }
                     }
@@ -387,9 +387,9 @@
 
             .info {
                 flex: 1;
-                padding-left: 50px;
+                padding-left: 30px;
 
-                @include br890 {
+                @include br1200 {
                     flex: 100%;
                     padding-left: 0px;
                 }
@@ -456,7 +456,7 @@
                     }
 
                     .count {
-                        width: 100px;
+                        width: 70px;
                         margin-top: 33px;
 
                         @include br690 {
@@ -596,7 +596,7 @@
 
                             li:nth-child(3) {
                                 flex: 50%;
-                                padding-right: 10px;
+                                padding-right: 5px;
 
                                 @include br690 {
                                     flex: 100%;
@@ -624,7 +624,7 @@
 
                             li:nth-child(4) {
                                 flex: 50%;
-                                padding-left: 10px;
+                                padding-left: 5px;
 
                                 @include br690 {
                                     flex: 100%;

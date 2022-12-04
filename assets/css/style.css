@@ -569,8 +569,8 @@ textarea {
 }
 .l-header__inner__row__mobile .js-toggle {
   position: relative;
-  width: 28px;
-  height: 21px;
+  width: 26px;
+  height: 19px;
   cursor: pointer;
   display: inline-block;
   transition: all 0.6s;
@@ -587,7 +587,7 @@ textarea {
   box-sizing: border-box;
 }
 .l-header__inner__row__mobile .js-toggle span:nth-of-type(2) {
-  top: 10px;
+  top: 8px;
 }
 .l-header__inner__row__mobile .js-toggle span:nth-of-type(3) {
   bottom: 0px;
@@ -994,6 +994,11 @@ textarea {
 
 .cart__btn img {
   height: 25px;
+}
+@media screen and (min-width: 200px) and (max-width: 1220px) {
+  .cart__btn img {
+    height: 28px;
+  }
 }
 
 .user__btn img {
@@ -4796,21 +4801,21 @@ textarea {
   flex-wrap: wrap;
   margin-top: 60px;
 }
-@media screen and (min-width: 200px) and (max-width: 910px) {
+@media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-shop__inner__detail {
     margin-top: 30px;
   }
 }
 .p-shop__inner__detail .gallery {
-  width: 550px;
+  width: 630px;
   position: relative;
 }
-@media screen and (min-width: 200px) and (max-width: 910px) {
+@media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-shop__inner__detail .gallery {
     width: 100%;
   }
 }
-@media screen and (min-width: 200px) and (max-width: 910px) {
+@media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-shop__inner__detail .gallery .sidebar__inner {
     position: relative !important;
     top: initial !important;
@@ -4841,7 +4846,7 @@ textarea {
 .p-shop__inner__detail .gallery .cSlider--single .slick-prev {
   left: 10px;
 }
-@media screen and (min-width: 200px) and (max-width: 910px) {
+@media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-shop__inner__detail .gallery .cSlider--single .slick-prev {
     left: 10px;
   }
@@ -4849,7 +4854,7 @@ textarea {
 .p-shop__inner__detail .gallery .cSlider--single .slick-next {
   right: 10px;
 }
-@media screen and (min-width: 200px) and (max-width: 910px) {
+@media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-shop__inner__detail .gallery .cSlider--single .slick-next {
     right: 10px;
   }
@@ -4884,7 +4889,7 @@ textarea {
 .p-shop__inner__detail .gallery .cSlider--nav .slick-prev {
   left: 10px;
 }
-@media screen and (min-width: 200px) and (max-width: 910px) {
+@media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-shop__inner__detail .gallery .cSlider--nav .slick-prev {
     left: 10px;
   }
@@ -4892,16 +4897,16 @@ textarea {
 .p-shop__inner__detail .gallery .cSlider--nav .slick-next {
   right: 10px;
 }
-@media screen and (min-width: 200px) and (max-width: 910px) {
+@media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-shop__inner__detail .gallery .cSlider--nav .slick-next {
     right: 10px;
   }
 }
 .p-shop__inner__detail .info {
   flex: 1;
-  padding-left: 50px;
+  padding-left: 30px;
 }
-@media screen and (min-width: 200px) and (max-width: 910px) {
+@media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-shop__inner__detail .info {
     flex: 100%;
     padding-left: 0px;
@@ -4964,7 +4969,7 @@ textarea {
   }
 }
 .p-shop__inner__detail .info .group-btn .count {
-  width: 100px;
+  width: 70px;
   margin-top: 33px;
 }
 @media screen and (min-width: 200px) and (max-width: 710px) {
@@ -5095,7 +5100,7 @@ textarea {
 }
 .p-shop__inner__detail .info .group-btn__btn ul li:nth-child(3) {
   flex: 50%;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 @media screen and (min-width: 200px) and (max-width: 710px) {
   .p-shop__inner__detail .info .group-btn__btn ul li:nth-child(3) {
@@ -5122,7 +5127,7 @@ textarea {
 }
 .p-shop__inner__detail .info .group-btn__btn ul li:nth-child(4) {
   flex: 50%;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 @media screen and (min-width: 200px) and (max-width: 710px) {
   .p-shop__inner__detail .info .group-btn__btn ul li:nth-child(4) {
@@ -5448,12 +5453,7 @@ textarea {
 }
 @media screen and (min-width: 200px) and (max-width: 1220px) {
   .p-course {
-    padding-top: 105px;
-  }
-}
-@media screen and (min-width: 200px) and (max-width: 520px) {
-  .p-course {
-    padding-top: 79px;
+    padding-top: 0px;
   }
 }
 .p-course__inner {
@@ -5721,6 +5721,7 @@ textarea {
 }
 .note .date p {
   display: flex;
+  justify-content: space-between;
 }
 @media screen and (min-width: 200px) and (max-width: 1220px) {
   .note .date p {
@@ -5806,6 +5807,21 @@ textarea {
   padding-top: 80px;
   padding-bottom: 80px;
   background-size: cover !important;
+}
+@media screen and (min-width: 200px) and (max-width: 1010px) {
+  .p-course-detail__breadcrumbs {
+    background-position: -500px !important;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 520px) {
+  .p-course-detail__breadcrumbs {
+    background-position: -650px !important;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 390px) {
+  .p-course-detail__breadcrumbs {
+    background-position: -700px !important;
+  }
 }
 .p-course-detail__breadcrumbs__inner {
   max-width: 1200px;
@@ -8402,16 +8418,25 @@ textarea {
   transform: translate(-50%, -100%);
   z-index: 1;
 }
+@media screen and (min-width: 200px) and (max-width: 1220px) {
+  .cSlider--single1 .cSlider__item1__sale {
+    top: 100px;
+    transform: translateX(-50%);
+  }
+}
 @media screen and (min-width: 200px) and (max-width: 910px) {
   .cSlider--single1 .cSlider__item1__sale {
     top: 50px;
-    transform: translateX(-50%);
   }
 }
 @media screen and (min-width: 200px) and (max-width: 520px) {
   .cSlider--single1 .cSlider__item1__sale {
-    top: 100px;
-    transform: translateX(-50%);
+    top: 70px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 390px) {
+  .cSlider--single1 .cSlider__item1__sale {
+    top: 50px;
   }
 }
 .cSlider--single1 .cSlider__item1__sale h4 {
@@ -8440,9 +8465,16 @@ textarea {
   font-size: 16px;
   font-size: 1rem;
 }
-@media screen and (min-width: 200px) and (max-width: 520px) {
+@media screen and (min-width: 200px) and (max-width: 910px) {
   .cSlider--single1 .cSlider__item1__sale a {
     width: 300px;
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 520px) {
+  .cSlider--single1 .cSlider__item1__sale a {
+    width: 250px;
     font-size: 14px;
     font-size: 0.875rem;
   }

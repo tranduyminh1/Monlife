@@ -5,11 +5,7 @@
     margin-bottom: 60px;
 
     @include br1200 {
-        padding-top: 105px;
-    }
-
-    @include br500 {
-        padding-top: 79px;
+        padding-top: 0px;
     }
 
     &__inner {
@@ -303,6 +299,7 @@
 
         p {
             display: flex;
+            justify-content: space-between;
 
             @include br1200 {
                 flex-wrap: wrap;

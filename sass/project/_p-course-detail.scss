@@ -14,6 +14,18 @@
         padding-bottom: 80px;
         background-size: cover !important;
 
+        @include br990 {
+            background-position: -500px !important;
+        }
+
+        @include br500 {
+            background-position: -650px !important;
+        }
+
+        @include br370 {
+            background-position: -700px !important;
+        }
+
         &__inner {
             max-width: 1200px;
             margin: 0 auto;

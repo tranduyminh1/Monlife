@@ -26,14 +26,21 @@
             transform: translate(-50%, -100%);
             z-index: 1;
 
-            @include br890 {
-                top: 50px;
+            @include br1200 {
+                top: 100px;
                 transform: translateX(-50%);
             }
 
+            @include br890 {
+                top: 50px;
+            }
+
             @include br500 {
-                top: 100px;
-                transform: translateX(-50%);
+                top: 70px;
+            }
+
+            @include br370 {
+                top: 50px;
             }
 
             h4 {
@@ -59,8 +66,13 @@
                 height: 45px;
                 @include fs(16);
 
-                @include br500 {
+                @include br890 {
                     width: 300px;
+                    @include fs(14);
+                }
+
+                @include br500 {
+                    width: 250px;
                     @include fs(14);
                 }
             }
