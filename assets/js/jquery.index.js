@@ -347,7 +347,7 @@ $rootSingle1.slick({
 	useTransform: true,
 	speed: 400,
 	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-	autoplay: f,
+	autoplay: true,
 	autoplaySpeed: 6000,
 	responsive: [{
 		breakpoint: 1024,
