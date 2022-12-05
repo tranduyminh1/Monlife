@@ -4,6 +4,10 @@
     .cSlider__item1 {
         position: relative;
 
+        @include br890 {
+            padding-top: 40px;
+        }
+
         &::after {
             content: "";
             position: absolute;
@@ -18,68 +22,6 @@
         .cSlider1 {
             position: relative;
         }
-
-        &__sale {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -100%);
-            z-index: 1;
-
-            @include br1200 {
-                top: 100px;
-                transform: translateX(-50%);
-            }
-
-            @include br890 {
-                top: 50px;
-            }
-
-            @include br500 {
-                top: 70px;
-            }
-
-            @include br370 {
-                top: 50px;
-            }
-
-            h4 {
-                @include fs(28);
-                margin-bottom: 15px;
-                text-align: center;
-                color: #fff;
-                font-weight: normal;
-
-                @include br500 {
-                    @include fs(22);
-                }
-            }
-
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #fff;
-                background-color: #5B712E;
-                border-radius: 5px;
-                width: 350px;
-                height: 45px;
-                @include fs(16);
-
-                @include br890 {
-                    width: 300px;
-                    @include fs(14);
-                }
-
-                @include br500 {
-                    width: 250px;
-                    @include fs(14);
-                }
-            }
-
-        }
-
-
 
         .pc {
             display: block;
@@ -152,6 +94,7 @@
                 width: 100%;
                 bottom: 0px;
                 padding-bottom: 20px;
+                z-index: 5;
 
                 @include br1200 {
                     left: 0px;
@@ -206,6 +149,53 @@
             }
         }
     }
+}
+
+.cSlider__sale {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 9999;
+
+    @include br890 {
+        top: 0px;
+        transform: none;
+        left: 0px;
+        width: 100%;
+    }
+
+    h4 {
+        @include fs(28);
+        margin-bottom: 15px;
+        text-align: center;
+        color: #fff;
+        font-weight: normal;
+
+        @include br500 {
+            @include fs(22);
+        }
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #5B712E;
+        border-radius: 5px;
+        width: 350px;
+        height: 45px;
+        @include fs(16);
+
+        @include br890 {
+            width: 100%;
+            height: 40px;
+            @include fs(14);
+            border-radius: 0px;
+        }
+    }
+
 }
 
 .cSlider--nav1 {

@@ -347,8 +347,8 @@ $rootSingle1.slick({
 	useTransform: true,
 	speed: 400,
 	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-	autoplay: true,
-	autoplaySpeed: 5000,
+	autoplay: f,
+	autoplaySpeed: 6000,
 	responsive: [{
 		breakpoint: 1024,
 		settings: {
@@ -385,7 +385,7 @@ $rootNav1.on('init', function (event, slick) {
 		autoplay: true,
 		prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><img src="./assets/img/common/icn_arrow_left_slider_01.svg" class="slide-arrow prev-arrow"></button>',
 		nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><img src="./assets/img/common/icn_arrow_right_slider_01.svg" class="slide-arrow prev-arrow"></button>',
-		autoplaySpeed: 5000,
+		autoplaySpeed: 6000,
 		responsive: [{
 			breakpoint: 1024,
 			settings: {
