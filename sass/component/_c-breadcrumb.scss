@@ -105,3 +105,9 @@
         }
     }
 }
+
+.c-breadcrumb-course {
+    @include br500 {
+        background-position: -720px !important;
+    }
+}
